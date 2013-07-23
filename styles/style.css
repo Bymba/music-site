@@ -1,0 +1,60 @@
+/*------General styles---------*/
+/*------Stylus functions-------*/
+/*------/Stylus functions-------*/
+/*------General styles---------*/
+body {
+  font: 14px 16px 'Calibry', Helvetica, sans-serif;
+}
+.main-wrap {
+  width: 30em;
+  margin: 0 auto;
+  background: #f00;
+  z-index: 10;
+  position: relative;
+}
+@media (min-width: 980px) {
+  body {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 768px) {
+  body .container {
+    width: 768px;
+  }
+}
+/*-----/General styles---------*/
+
+/*--------HEADER---------*/
+.upper-line {
+  border-top: solid #c33 0.25em;
+  background: #2a2b2c;
+  overflow: hidden;
+  zoom: -1;
+  height: 2em;
+  min-height: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.page-header {
+  margin-top: 2.25em;
+}
+.quick-access {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  color: #fff;
+  font-size: 0.75em;
+}
+.quick-access .customer-account {
+  line-height: 32px;
+  float: right;
+  padding-right: 100px;
+}
+.quick-access .checkout-button {
+  width: 100px;
+  line-height: 50px;
+  background: #c33;
+}
+/*--------/HEADER---------*/

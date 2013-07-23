@@ -1,0 +1,38 @@
+/*--------HEADER---------*/
+upperLine-height = 2em
+upperLine-border = 0.25em
+color-red = #cc3333
+color-black = #2a2b2c
+
+.upper-line
+    border-top: solid #cc3333 upperLine-border
+    background: color-black
+    overflow: hidden
+    zoom: -1
+    height: upperLine-height
+    min-height: upperLine-height
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+.page-header
+    margin-top upperLine-height+upperLine-border
+
+.quick-access 
+    position: absolute
+    top: -2rem
+    right: 0
+    color: white
+    font-size: 0.75em
+    
+    .customer-account
+        line-height: 32px
+        float: right
+        padding-right: 100px
+    
+    .checkout-button 
+        width: 100px
+        line-height: 50px
+        background: #cc3333
+/*--------/HEADER---------*/
