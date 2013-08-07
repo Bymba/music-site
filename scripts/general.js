@@ -29,6 +29,8 @@ jQuery(document).ready(function(){
         navPrevSelector: '.prev'
     });
 
+    //3dots
+    $('.addDots').ThreeDots({max_rows:3});
     
 });    
 

@@ -736,5 +736,7 @@ li {
 .recent-portfolio .descriptionHomePortText {
   font-size: 0.8125rem;
   line-height: 1.2rem;
+  height: 5.375rem;
+  padding-bottom: 0.625rem;
 }
 /*-----/General styles---------*/
