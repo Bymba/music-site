@@ -1,8 +1,14 @@
+@import "mixins"
+@import "images"
+
 /*--------HEADER---------*/
 upperLine-height = 2em
 upperLine-border = 0.25em
-color-red = #cc3333
-color-black = #2a2b2c
+.page-header
+    margin-top upperLine-height+upperLine-border
+    background: BG-main-bg repeat #000
+    padding: 0.625em 0
+    min-height: 1rem
 
 .upper-line
     border-top: solid #cc3333 upperLine-border
@@ -15,24 +21,257 @@ color-black = #2a2b2c
     top: 0
     left: 0
     width: 100%
-
-.page-header
-    margin-top upperLine-height+upperLine-border
+@media screen and (max-width: 400px) 
+    .upper-line 
+        background BG-main-bg repeat
 
 .quick-access 
     position: absolute
-    top: -2rem
+    top: -2.625rem
     right: 0
     color: white
-    font-size: 0.75em
-    
+    font-size: 0.75rem 
+    width 20em 
+
     .customer-account
-        line-height: 32px
-        float: right
-        padding-right: 100px
-    
+        float left
+        line-height upperLine-height +0.4rem
+
     .checkout-button 
-        width: 100px
-        line-height: 50px
-        background: #cc3333
+        float: right        
+        padding-right: pR = 0.8rem
+        padding-left: pL = 2.75rem
+        min-width: checkout-button_minWidth = 6rem - (pL + pR)
+        max-width: 8rem - (pL + pR)
+        height: checkout-button_heignt = 2.875rem
+        line-height: checkout-button_heignt
+        background: color-red
+        font-size: font-size + 0.25em
+        margin-right: 0.125rem
+        border-radius: 0 0 1.125rem 1.125rem/0 0 1rem 1rem
+        background-image: BG-icon-cart
+        background-repeat: no-repeat
+        background-position: 10px 6px
+        overflow: hidden
+        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3)
+        &:hover
+            cursor: pointer
+            text-decoration: underline
+    
+
+
+@media screen and (max-width: 400px) 
+    .quick-access
+        width 100%
+        color color-red            
+
+        .customer-account
+        .checkout-button 
+            background: none;
+            border-radius: 0 0 0 0;
+            box-shadow: none;
+            height: 2rem;
+            line-height: 2rem;
+            margin-right: 0;
+            padding: 0 1rem;
+            text-align: center;
+            font-size: 0.75rem
+            font-weight: bold
+        .checkout-button:hover
+        .customer-account:hover
+            background-color color-red
+            color color-black
+            text-decoration none
+
+
+    .customer-account
+        line-height: 2rem
+        float: left
+        padding-right: 1.5rem
+        font-weight: bold
+        &:hover
+            cursor: pointer
+            color: color-red
+
+.block-logo
+    position: relative
+    width: blockLogo_Width = 12em
+    overflow: hidden    
+
+    .logo-link 
+        color: color-black
+        width: blockLogo_Width
+        display: block
+        &:hover
+            color: color-red
+
+    .company-name
+        position: absolute
+        top: 50%
+        margin: -1rem 0 0 0.175em
+        font-size: 2em
+
+@media screen and (max-width: 800px) 
+    .block-logo
+        left: 50%
+        margin-left: -6em
+
+@media screen and (max-width: 400px) 
+    .block-logo
+        position absolute
+        left 50%
+        top -2.5rem
+        width auto
+        margin-left 0
+        z-index 3
+        .logo-link
+            width 1.8rem
+            img 
+                width: 100%
+                height: auto
+        .company-name
+            display none
+
+.nav-layuot
+    max-width: 48em;
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    z-index: 100;
+    font-weight:bold;
+    font-size: 0.875em
+    margin-top: -1em       
+    
+    .main-nav.default.level_1 .item
+        position: relative
+        &:hover > .link
+            color color-red
+            transition 0.25s    
+    
+    .main-nav.default.level_1>.item>.link 
+        text-decoration: none
+        color: color-black
+        line-height 3em
+        display block
+        padding-left: 2rem
+        padding-right: 0.625rem    
+        height 100%  
+
+    .has-subMenu 
+        background BG-icon-subMenu no-repeat right 50%
+        &:hover .subMenu
+            display block
+   
+    .subMenu
+        display:none
+        position absolute
+        top: 2.5rem
+        left: 1.875rem
+        min-width 12.5rem
+        background white
+        opacity 0.8
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+        border-bottom 5px solid color-red
+        .link
+            border-bottom: 1px solid #EEEEEE;
+            display: block;
+            font-size: 0.75rem;
+            height: auto;
+            margin: 0 0.625rem;
+            padding: 0.625rem 0;
+            text-decoration: none;
+            width: 100%;
+            font-weight normal;
+            color: color-black;
+    .main-nav.resp
+        display: none
+        margin 0 auto
+        min-width 12rem
+
+
+@media screen and (max-width: 800px)
+  .nav-layuot
+        position: relative
+        width  100%
+        max-width 100%
+        margin 1em 0;
+        .main-nav.default
+            display none
+        .main-nav.resp
+            display block
+
 /*--------/HEADER---------*/
+.selectStyle
+    display:none
+    position: relative
+    
+    fakeSelect_width = 12.5rem;
+    fakeSelect_pL = 1rem
+    list_width = fakeSelect_width + fakeSelect_pL 
+    list_margin = (-0.5*list_width) - (0.125rem/2)
+
+    select
+        display: none
+    .fakeSelect
+        background: url("../images/selectStyleBg.png") repeat-x scroll 0 0 transparent;
+        border: 1px solid #DDDDDD;
+        cursor: pointer;
+        height: 28px;
+        margin: 0 auto;
+        padding: 0.5rem 0 0 fakeSelect_pL;
+        position: relative;
+        width: fakeSelect_width
+        &.active
+            border-bottom: 0;
+        .value
+            color: color-black + 111;
+            text-transform: uppercase
+
+    .fakeSelect .arrow
+        background: BG-icon-selectArrow no-repeat;
+        display: block;
+        height: 5px;
+        margin: -3px 0 0;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        width: 10px;
+
+    .list
+        background: #f8f8f8;
+        border: 1px solid #DDDDDD;
+        border-top: 0;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: list_width
+        margin-left: list_margin
+        z-index: 10;
+        li
+            padding: 10px 15px
+            color: #7d7d7d
+            &:hover
+                background: #ddd
+                cursor: pointer
+
+&.list li.active
+    color: #ff7f00
+
+@media screen and (max-width: 800px)
+    .selectStyle
+        display block
+@media screen and (max-width: 400px)
+    .selectStyle
+        fakeSelect_width = 10.5rem
+        fakeSelect_pL = 0.6rem
+        list_width = fakeSelect_width + fakeSelect_pL 
+        list_margin = (-0.5*list_width) - (0.125rem/2)
+
+
+        .fakeSelect
+            width fakeSelect_width
+            padding-left fakeSelect_pL
+        .list
+            width: list_width
+            margin-left: list_margin

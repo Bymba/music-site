@@ -1,0 +1,188 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'stylus-sprite' ]
+2 info using npm@1.2.25
+3 info using node@v0.10.10
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json D:\web\sites\music-site\package.json
+6 warn package.json grunt-frontend@0.1.7 No repository field.
+7 verbose read json D:\web\sites\music-site\node_modules\grunt\package.json
+8 verbose read json D:\web\sites\music-site\node_modules\grunt-coffeelint\package.json
+9 verbose read json D:\web\sites\music-site\node_modules\grunt-contrib-coffee\package.json
+10 verbose read json D:\web\sites\music-site\node_modules\grunt-contrib-concat\package.json
+11 verbose read json D:\web\sites\music-site\node_modules\grunt-contrib-connect\package.json
+12 verbose read json D:\web\sites\music-site\node_modules\grunt-contrib-jade\package.json
+13 verbose read json D:\web\sites\music-site\node_modules\grunt-contrib-stylus\package.json
+14 verbose read json D:\web\sites\music-site\node_modules\grunt-contrib-watch\package.json
+15 verbose from cache D:\web\sites\music-site\package.json
+16 verbose readDependencies using package.json deps
+17 verbose cache add [ 'stylus-sprite', null ]
+18 verbose cache add name=undefined spec="stylus-sprite" args=["stylus-sprite",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'stylus-sprite',
+19 verbose parsed url   path: 'stylus-sprite',
+19 verbose parsed url   href: 'stylus-sprite' }
+20 silly lockFile 27daa10f-stylus-sprite stylus-sprite
+21 verbose lock stylus-sprite C:\Users\mue\AppData\Roaming\npm-cache\27daa10f-stylus-sprite.lock
+22 silly lockFile 27daa10f-stylus-sprite stylus-sprite
+23 silly lockFile 27daa10f-stylus-sprite stylus-sprite
+24 verbose addNamed [ 'stylus-sprite', '' ]
+25 verbose addNamed [ null, '' ]
+26 silly lockFile ced382a6-stylus-sprite stylus-sprite@
+27 verbose lock stylus-sprite@ C:\Users\mue\AppData\Roaming\npm-cache\ced382a6-stylus-sprite.lock
+28 silly addNameRange { name: 'stylus-sprite', range: '', hasData: false }
+29 verbose url raw stylus-sprite
+30 verbose url resolving [ 'https://registry.npmjs.org/', './stylus-sprite' ]
+31 verbose url resolved https://registry.npmjs.org/stylus-sprite
+32 info trying registry request attempt 1 at 13:55:22
+33 verbose etag "4FQZDSNLQ9TI4YHTC3232LTKM"
+34 http GET https://registry.npmjs.org/stylus-sprite
+35 http 304 https://registry.npmjs.org/stylus-sprite
+36 silly registry.get cb [ 304,
+36 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+36 silly registry.get     etag: '"4FQZDSNLQ9TI4YHTC3232LTKM"',
+36 silly registry.get     date: 'Thu, 25 Jul 2013 10:55:23 GMT',
+36 silly registry.get     'content-length': '0' } ]
+37 verbose etag stylus-sprite from cache
+38 silly addNameRange number 2 { name: 'stylus-sprite', range: '', hasData: true }
+39 silly addNameRange versions [ 'stylus-sprite',
+39 silly addNameRange   [ '0.1.0',
+39 silly addNameRange     '0.1.1',
+39 silly addNameRange     '0.1.2',
+39 silly addNameRange     '0.1.3',
+39 silly addNameRange     '0.1.4',
+39 silly addNameRange     '0.1.5',
+39 silly addNameRange     '0.1.6',
+39 silly addNameRange     '0.1.7',
+39 silly addNameRange     '0.1.8' ] ]
+40 verbose addNamed [ 'stylus-sprite', '0.1.8' ]
+41 verbose addNamed [ '0.1.8', '0.1.8' ]
+42 silly lockFile 6b865793-stylus-sprite-0-1-8 stylus-sprite@0.1.8
+43 verbose lock stylus-sprite@0.1.8 C:\Users\mue\AppData\Roaming\npm-cache\6b865793-stylus-sprite-0-1-8.lock
+44 verbose read json C:\Users\mue\AppData\Roaming\npm-cache\stylus-sprite\0.1.8\package\package.json
+45 silly lockFile 6b865793-stylus-sprite-0-1-8 stylus-sprite@0.1.8
+46 silly lockFile 6b865793-stylus-sprite-0-1-8 stylus-sprite@0.1.8
+47 silly lockFile ced382a6-stylus-sprite stylus-sprite@
+48 silly lockFile ced382a6-stylus-sprite stylus-sprite@
+49 silly resolved [ { name: 'stylus-sprite',
+49 silly resolved     description: 'Generate sprite images with Stylus',
+49 silly resolved     version: '0.1.8',
+49 silly resolved     author: { name: 'Andris Reinman' },
+49 silly resolved     maintainers: [ [Object] ],
+49 silly resolved     homepage: 'http://github.com/andris9/stylus-sprite',
+49 silly resolved     repository:
+49 silly resolved      { type: 'git',
+49 silly resolved        url: 'http://github.com/andris9/stylus-sprite.git' },
+49 silly resolved     main: './stylus-sprite',
+49 silly resolved     licenses: [ [Object] ],
+49 silly resolved     dependencies: { 'node-gd': 'git://github.com/sjulean/node-gd.git' },
+49 silly resolved     engine: [ 'node >=0.3.0' ],
+49 silly resolved     keywords: [ 'CSS', 'sprite', 'sprites', 'images' ],
+49 silly resolved     readme: 'Stylus-Sprite\n=============\n\n**Stylus-Sprite** is an extension for [Stylus](https://github.com/LearnBoost/stylus) which makes sprite images from Stylus tags. \nActually it takes a image file, places it to a sprite image and replaces the original\npointer in the CSS file with position coordinates according to the sprite image.\n\nInstallation\n------------\n\n    npm install stylus-sprite\n\nDependencies\n------------\n\n  * [stylus](https://github.com/LearnBoost/stylus)\n  * [node-gd](/andris9/node-gd) - GD bindings for Node.JS. NB! Make sure you have *libgd* installed on yopur system\n\nInstall *libgd* on Mac with [homebrew](http://mxcl.github.com/homebrew/)\n \n    brew update\n    brew install libgd\n\nInstall *libgd* on Debian/Ubuntu\n\n    apt-get install libgd2-xpm-dev\n\nI had problems using node-gd on mac but on Debian it worked perfectly\n\nUsage\n-----\n\nConsider the following Stylus CSS\n\n    .block-elm\n        background: url(sprite.png) no-repeat sprite("star.png");\n        width: 25px;\n        height: 25px;\n        \nAfter running Stylus-Sprite the resulting CSS would be something like\n\n    .block_elm{\n        background: url(sprite.png) no-repeat -25px -78px;\n        width: 25px;\n        height: 25px;\n    }\n\nAnd the image *sprite.png* would have *star.png* placed on position 25x78 px.\n\nCSS API\n-------\n\nFunction `sprite(filename[, options])` includes the `filename` in the sprite image and replaces `sprite(...)` with the coordinates\nof it.\n\nIf `options` param is left empty, no special behavior is added.\n\n    background-position: sprite("tag.png");\n\n`options` is a string similar to html *style* param, keys and values separated with colons and key/value pairs with semicolons.\n\n    background-position: sprite("tag.png","height: 120; repeat: x");\n    \nPossible keys are\n\n  * `width` - width of the image on sprite, defaults to image with\n  * `height` - height of the image on sprite, defaults to image height\n  * `resize` - if `true` then resizes the image to `width` and `height` , defaults to false\n  * `valign` - if `resize` is false and `height` is bigger than image width, place the image to `top`, `middle` or `bottom`, defaults to `top`\n  * `align` - if value is `right` then X coordinate value in CSS will be set to `100%`\n  * `repeat` - if value is `x` then repeats the image from entire width of the canvas or to `limit-repeat-x` value; if value is `y` then repeats the image from current Y position to `limit-repeat-y` value; default is `no`.\n  * `limit-repeat-x` - limit the width of the repeatable area, defaults to 0 (no limit)\n  * `limit-repeat-y` - limit the height of the repeatable area, defaults to 300\n\nNB! All numeric values are plain numeric, no measurement units (defaults to pixels). \n\n\nJavaScript API\n--------------\n\nCreating the sprite consists of two phases - preparation and rendering.\n\nThe first step is to define *StylusSprite* object with required params\n\n    var sprite = new StylusSprite({\n        image_root: "./images",\n        output_file:"sprite.png"\n    });\n\nSecond step would be hooking to the Stylus parsing phase with *Stylus.define*\n\n    stylus...define(\'sprite\', function(filename, option_val){\n            // preparation phase\n            return sprite.spritefunc(filename, option_val);\n        });\n\nA more sane version would be using bound function \n\n    sprite.spritefunc.bind(sprite, filename, option_val)\n    \nbut as Stylus checks for function parameters proxying anonymous function is needed.\n\nFinally when Stylus is finished rendering the CSS *sprite.build* must be run with it. \n\n    sprite.build(rendered_css, function(err, final_css){\n        console.log(final_css);\n    });\n\nSomewhat complete example:\n\n    var stylus = require("stylus"),\n        StylusSprite = require("stylus-sprite")\n        sprite = new StylusSprite({output_file:"sprite.png"});\n    \n    var css = "body.....";\n    \n    stylus(css).\n        set(\'filename\', \'test.css\').\n        define(\'sprite\', function(filename, option_val){\n            // preparation phase\n            return sprite.spritefunc(filename, option_val);\n        }).\n        render(function(err, css){\n            if (err) throw err;\n            \n            // rendering phase\n            sprite.build(css, function(err, css){\n                if (err) throw err;\n                console.log(css);\n            });\n        });\n\n## Pngcrush\n\nIf you have [Pngcrush](http://pmt.sourceforge.net/pngcrush/) installed in your system, you can use it to optimize generated PNG images.\n\n    var sprite = new StylusSprite({\n        image_root: "./images",\n        output_file:"sprite.png",\n        pngcrush: "pngcrush" // path to pngcrush command\n    });',
+49 silly resolved     readmeFilename: 'README.md',
+49 silly resolved     bugs: { url: 'https://github.com/andris9/stylus-sprite/issues' },
+49 silly resolved     _id: 'stylus-sprite@0.1.8',
+49 silly resolved     _from: 'stylus-sprite@' } ]
+50 info install stylus-sprite@0.1.8 into D:\web\sites\music-site
+51 info installOne stylus-sprite@0.1.8
+52 verbose from cache C:\Users\mue\AppData\Roaming\npm-cache\stylus-sprite\0.1.8\package\package.json
+53 info D:\web\sites\music-site\node_modules\stylus-sprite unbuild
+54 verbose read json D:\web\sites\music-site\node_modules\stylus-sprite\package.json
+55 verbose tar unpack C:\Users\mue\AppData\Roaming\npm-cache\stylus-sprite\0.1.8\package.tgz
+56 silly lockFile 386fb18a--site-node-modules-stylus-sprite D:\web\sites\music-site\node_modules\stylus-sprite
+57 verbose lock D:\web\sites\music-site\node_modules\stylus-sprite C:\Users\mue\AppData\Roaming\npm-cache\386fb18a--site-node-modules-stylus-sprite.lock
+58 silly lockFile ce554daa--stylus-sprite-0-1-8-package-tgz C:\Users\mue\AppData\Roaming\npm-cache\stylus-sprite\0.1.8\package.tgz
+59 verbose lock C:\Users\mue\AppData\Roaming\npm-cache\stylus-sprite\0.1.8\package.tgz C:\Users\mue\AppData\Roaming\npm-cache\ce554daa--stylus-sprite-0-1-8-package-tgz.lock
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+63 silly gunzTarPerm extractEntry .npmignore
+64 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+67 silly gunzTarPerm extractEntry LICENSE
+68 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+69 silly gunzTarPerm extractEntry stylus-sprite.js
+70 silly gunzTarPerm modified mode [ 'stylus-sprite.js', 438, 420 ]
+71 silly gunzTarPerm extractEntry test/test.js
+72 silly gunzTarPerm modified mode [ 'test/test.js', 438, 420 ]
+73 silly gunzTarPerm extractEntry test/images/star.png
+74 silly gunzTarPerm modified mode [ 'test/images/star.png', 438, 420 ]
+75 silly gunzTarPerm extractEntry test/out/sprite.css
+76 silly gunzTarPerm modified mode [ 'test/out/sprite.css', 438, 420 ]
+77 silly gunzTarPerm extractEntry test/out/sprite.html
+78 silly gunzTarPerm modified mode [ 'test/out/sprite.html', 438, 420 ]
+79 silly gunzTarPerm extractEntry test/out/sprite.png
+80 silly gunzTarPerm modified mode [ 'test/out/sprite.png', 438, 420 ]
+81 silly gunzTarPerm extractEntry test/test.css
+82 silly gunzTarPerm modified mode [ 'test/test.css', 438, 420 ]
+83 verbose read json D:\web\sites\music-site\node_modules\stylus-sprite\package.json
+84 silly lockFile 386fb18a--site-node-modules-stylus-sprite D:\web\sites\music-site\node_modules\stylus-sprite
+85 silly lockFile 386fb18a--site-node-modules-stylus-sprite D:\web\sites\music-site\node_modules\stylus-sprite
+86 silly lockFile ce554daa--stylus-sprite-0-1-8-package-tgz C:\Users\mue\AppData\Roaming\npm-cache\stylus-sprite\0.1.8\package.tgz
+87 silly lockFile ce554daa--stylus-sprite-0-1-8-package-tgz C:\Users\mue\AppData\Roaming\npm-cache\stylus-sprite\0.1.8\package.tgz
+88 info preinstall stylus-sprite@0.1.8
+89 verbose from cache D:\web\sites\music-site\node_modules\stylus-sprite\package.json
+90 verbose readDependencies using package.json deps
+91 verbose from cache D:\web\sites\music-site\node_modules\stylus-sprite\package.json
+92 verbose readDependencies using package.json deps
+93 verbose cache add [ 'node-gd@git://github.com/sjulean/node-gd.git', null ]
+94 verbose cache add name=undefined spec="node-gd@git://github.com/sjulean/node-gd.git" args=["node-gd@git://github.com/sjulean/node-gd.git",null]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: 'node-gd@git://github.com/sjulean/node-gd.git',
+95 verbose parsed url   path: 'node-gd@git://github.com/sjulean/node-gd.git',
+95 verbose parsed url   href: 'node-gd@git://github.com/sjulean/node-gd.git' }
+96 verbose cache add name="node-gd" spec="git://github.com/sjulean/node-gd.git" args=["node-gd","git://github.com/sjulean/node-gd.git"]
+97 verbose parsed url { protocol: 'git:',
+97 verbose parsed url   slashes: true,
+97 verbose parsed url   auth: null,
+97 verbose parsed url   host: 'github.com',
+97 verbose parsed url   port: null,
+97 verbose parsed url   hostname: 'github.com',
+97 verbose parsed url   hash: null,
+97 verbose parsed url   search: null,
+97 verbose parsed url   query: null,
+97 verbose parsed url   pathname: '/sjulean/node-gd.git',
+97 verbose parsed url   path: '/sjulean/node-gd.git',
+97 verbose parsed url   href: 'git://github.com/sjulean/node-gd.git' }
+98 silly lockFile f041a12d-t-github-com-sjulean-node-gd-git git://github.com/sjulean/node-gd.git
+99 verbose lock git://github.com/sjulean/node-gd.git C:\Users\mue\AppData\Roaming\npm-cache\f041a12d-t-github-com-sjulean-node-gd-git.lock
+100 verbose addRemoteGit [ 'git://github.com/sjulean/node-gd.git', 'master' ]
+101 silly lockFile f041a12d-t-github-com-sjulean-node-gd-git git://github.com/sjulean/node-gd.git
+102 silly lockFile f041a12d-t-github-com-sjulean-node-gd-git git://github.com/sjulean/node-gd.git
+103 verbose about to build D:\web\sites\music-site\node_modules\stylus-sprite
+104 info D:\web\sites\music-site\node_modules\stylus-sprite unbuild
+105 verbose from cache D:\web\sites\music-site\node_modules\stylus-sprite\package.json
+106 info preuninstall stylus-sprite@0.1.8
+107 info uninstall stylus-sprite@0.1.8
+108 verbose true,D:\web\sites\music-site\node_modules,D:\web\sites\music-site\node_modules unbuild stylus-sprite@0.1.8
+109 info postuninstall stylus-sprite@0.1.8
+110 error not found: git
+111 error Failed using git.
+111 error This is most likely not a problem with npm itself.
+111 error Please check if you have git installed and in your PATH.
+112 error System Windows_NT 6.1.7600
+113 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "stylus-sprite"
+114 error cwd D:\web\sites\music-site
+115 error node -v v0.10.10
+116 error npm -v 1.2.25
+117 error code ENOGIT
+118 verbose exit [ 1, true ]

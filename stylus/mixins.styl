@@ -1,0 +1,46 @@
+/*-------General variables-------*/
+color-red = #cc3333
+color-black = #2a2b2c
+font-size = 1em
+line-height = 1em
+font = font-size/line-height 'Calibry', Helvetica, sans-serif
+
+/*-------/General variables-------*/
+/*-------General functions-------*/
+position() //if z-index is not defined for this element, adds z-index:1
+    position: arguments
+    z-index: 1 unless @z-index
+
+z-index()//if position is not defined for this element, adds postion:relative
+	z-index: arguments
+	position: relative unless @position
+
+vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    {prop} args
+
+border-radius()
+    vendor('border-radius', arguments)
+  
+box-shadow()
+    vendor('box-shadow', arguments)
+
+
+transition()
+	-webkit-transition arguments
+	-moz-transition arguments
+	-o-transition arguments
+	transition arguments
+
+animation()
+	-webkit-animation arguments
+	-o-animation arguments
+	animation arguments
+
+border(color, args...)
+  if color is a 'color'
+    border: 1px solid color args
+  else
+    border: arguments
+/*-------General functions-------*/

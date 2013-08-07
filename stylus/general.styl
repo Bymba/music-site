@@ -1,35 +1,34 @@
-font-size = 14px
-line-height = 16px
-font = font-size line-height 'Calibry', Helvetica, sans-serif
+@import "mixins"
+@import "images"
 
 
-/*------General styles---------*/
-/*------Stylus functions-------*/
-position() //if z-index is not defined for this element, adds z-index:1
-    position: arguments
-    z-index: 1 unless @z-index
 
-z-index()//if position is not defined for this element, adds postion:relative
-	z-index: arguments
-	position: relative unless @position
-/*------/Stylus functions-------*/
-
-/*------General styles---------*/
 body
    font font 
-
-.main-wrap 
-	width 30em
+li 
+  list-style: none;
+.main-wrap
+	width 60em
 	margin 0 auto
-	background red
 	z-index 10
-@media (min-width: 980px)
-  body
-    padding-top 60px
+@media screen and (max-width: 960px)
+  .main-wrap
+    width:100%
 
-@media (min-width: 768px)
-  body
-    .container
-      width 768px
+.horisontal-list 
+  &>li 
+    float:left
 
+.f-left
+  float:left
+
+.f-right
+  float: right
+
+.clear-fix
+  clear: both
+
+@import "header"
+@import "sliders"
+@import "index-content"
 /*-----/General styles---------*/

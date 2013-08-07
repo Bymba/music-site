@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 		  compress: false
 		},
 		files: {
-		  'styles/style.css': 'stylus/*.styl',
+		  'styles/style.css': 'stylus/general.styl',
 		}
 	  }
 	},

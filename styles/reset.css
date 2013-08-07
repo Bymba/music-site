@@ -19,12 +19,8 @@ time, mark, audio, video {
     padding:0;
     border:0;
     outline:0;
-    font-size:100%;
     vertical-align:baseline;
     background:transparent;
-}
-body {
-    line-height:1;
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
@@ -47,6 +43,7 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    outline:none;
 }
 /* change colours to suit your needs */
 ins {
@@ -83,4 +80,8 @@ hr {
 }
 input, select {
     vertical-align:middle;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
