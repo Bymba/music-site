@@ -1,0 +1,552 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea {
+    padding: 0;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- main setting  ---------*/
+html {
+    overflow-y: scroll;
+}
+body {
+    background: #fff;
+    color: #000;
+    text-align: left;
+    font: 14px/22px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+input, select, button, textarea {
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    color: #058caf;
+    text-decoration: underline;
+}
+a:hover {
+    color: #058caf;
+    text-decoration: none;
+}
+a:focus, a:active {
+    color: #058caf;
+    text-decoration: underline;
+}
+
+/* --------------- /main setting  ---------*/
+/* --------------- fonts  ---------*/
+@font-face {
+    font-family: Newbaski;
+    src: url(../Fonts/Newbaski.PFB);
+    src: url(../Fonts/Newbaski.pfm);
+    src: url(../Fonts/Newbaski.ttf);
+}
+@font-face {
+    font-family: Newbasbi;
+    src: url(../Fonts/Newbasbi.PFB);
+    src: url(../Fonts/Newbasbi.pfm);
+    src: url(../Fonts/Newbasbi.ttf);
+}
+@font-face {
+    font-family: Newbaskn;
+    src: url(../Fonts/Newbaskn.PFB);
+    src: url(../Fonts/Newbaskn.pfm);
+    src: url(../Fonts/Newbaskn.ttf);
+}
+h1 {
+    font: 74px/53px 'Newbaskn';
+}
+h2 {
+    font: 26px/30px 'Newbaskn';
+}
+
+h3 {
+    font: 43px/53px 'Newbaskn';
+    color: #058caf;
+}
+h4 {
+    font: 20px/26px 'Newbaskn';
+    color: #058caf;
+}
+h1,h3 {
+    text-transform: lowercase;
+}
+/* --------------- /fonts  ---------*/
+
+/*-------------header----------------*/
+#header {
+    background: url("../images/bg-header.png") no-repeat 0 0;
+    min-height: 495px;
+    position: relative;
+}
+#logo a{
+    left: 35px;
+    position: absolute;
+    text-decoration: none;
+    top: 50px;
+}
+#logo a span {
+    display: inline-block;
+    font-size: 82px;
+    padding: 0 0 0 20px;
+}
+#header li{
+    list-style: none;
+}
+#sociable {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#sociable li{
+    float: left;
+    margin: 0 10px 0 0;
+}
+#sociable a {
+    display: block;
+    width: 24px;
+    height: 23px;
+    background: url("../images/bg-items-sprite.png") no-repeat ;
+}
+#sociable .flikr {
+    background-position: 0 -23px;
+}
+#sociable .delicious {
+    background-position: 0 -46px;
+}
+#main-menu {
+    position: absolute;
+    bottom: 10px;
+    left: 35px;
+}
+#main-menu li a {
+    display: block;
+    font: 30px/34px 'Newbaskn';
+    text-decoration: none;
+    background: url("../images/bg-items-sprite.png") no-repeat 0 -94px;
+    padding: 0 0 0 25px;
+    color: #4c4c4c;
+}
+#main-menu .active,
+#main-menu li a:hover,
+#sidebar .active{
+    color: #058caf;
+}
+/*-------------/header----------------*/
+/*-------------sidebar----------------*/
+#sidebar {
+    background: #f7f7f7;
+    float: left;
+    margin: 0 10px;
+    padding: 10px 40px 20px;
+    width: 190px;
+    min-height: 950px;
+    margin-bottom: -20000px;
+    overflow: hidden;
+    padding-bottom: 20000px;
+}
+#sidebar ul {
+    list-style: none;
+}
+#sidebar li {
+    border-bottom: 1px solid #D4D4D4;
+    border-top: 1px solid #FCFCFC;
+}
+#sidebar li:first-child,
+#sidebar .first-child{
+    border-top: none;
+}
+#sidebar li:last-child,
+#sidebar .last-child{
+    border-bottom: none;
+}
+#sidebar a {
+    background: url("../images/bg-items-sprite.png") no-repeat scroll 0 -158px transparent;
+    color: #4C4C4C;
+    display: block;
+    font: 16px/24px 'Arial';
+    padding: 3px 0 2px 20px;
+    text-decoration: none;
+}
+#links li a {
+    text-decoration: underline;
+}
+/*-------------/sidebar----------------*/
+/*-------------Main-content----------------*/
+#wrapper-main-content {
+    margin: 0 50px 0 310px;
+}
+.secondary-page h3{
+    padding: 10px 0;
+}
+/*----------Posts------------*/
+#wrapper-main-content article {
+    margin: 10px 0;
+}
+.post .entry-meta,
+.news .entry-meta{
+    color: #828282;
+    font: normal 12px/14px Arial;
+}
+.post .entry-meta span,
+.news .entry-meta span{
+    font-style: italic;
+}
+.post h2 a {
+    text-decoration: none;
+}
+.title {
+    position: relative;
+    border-bottom: solid 1px #e0e0e0;
+    padding: 0 0 10px 0;
+}
+#articles .title {
+    border-bottom: 0px;
+}
+.post .number-comments {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    height: 20px;
+    width: 23px;
+    background: url("../images/bg-items-sprite.png") no-repeat 0 -70px;
+    text-align: center;
+    position: absolute;
+    bottom: 14px;
+    right: 5px;
+    font: 11px/14px Arial;
+    padding-top: 2px;
+}
+.post .number-comments:before {
+    bottom: 7px;
+    box-shadow: 0 9px 2px rgba(0, 0, 0, 0.8);
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 110%;
+}
+.entry-content {
+    overflow: hidden;
+    padding: 0 0 50px 0;
+    position: relative;
+}
+.entry-content p{
+    width: 65%;
+    float: left;
+    outline: hidden;
+    margin: 30px 0 10px;
+}
+.entry-content p a {
+    color: #ff7f00;
+}
+.entry-content img {
+    width: 33%;
+}
+.entry-content .left {
+    float: left;
+    margin-right: 2%;
+}
+.entry-content .right {
+    float: right;
+    margin-left: 2%;
+}
+.entry-content li {
+    float: left;
+    width: 30%;
+    list-style: none;
+    margin: 0 3% 5px 0;
+}
+.entry-content li a {
+    display: block;
+    padding: 0 0 0 30px;
+    background: url("../images/bg-items-sprite.png") no-repeat 0 -137px;
+    color: #ff7f00;
+}
+/*---------/Posts------------*/
+/*---------News------------*/
+#news-archive article {
+    margin: 0 0 30px 0;
+}
+/*---------/News------------*/
+/*---------Gallery------------*/
+#photo-gallery ul {
+    list-style: none;
+    margin: 0 0 60px 0;
+    overflow: hidden;
+
+}
+#photo-gallery li {
+    float: left;
+    width: 33.3%;
+    margin: 0 0 10px 0;
+}
+#photo-gallery img {
+    border: 3px  solid #ffffff;
+    outline: 1px solid #C4C4C4;
+}
+/*---------/Gallery------------*/
+/*----------Recipes------------*/
+.recipes p {
+    height: 50px;
+    overflow: hidden;
+}
+
+/*---------/Recipes------------*/
+
+/*----------Navigation--------------*/
+#wrapper-main-content .navigation {
+    width: 40%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+#wrapper-main-content .navigation a,
+#wrapper-main-content .navigation .last:hover{
+    text-decoration: none;
+}
+#wrapper-main-content .navigation a:hover{
+    text-decoration: underline;
+}
+#wrapper-main-content .navigation .last {
+    color: #A1A1A1;
+}
+#wrapper-main-content .navigation .left {
+    float: left;
+}
+#wrapper-main-content .navigation .right {
+    float: right;
+}
+/*----------/Navigation--------------*/
+/*----------Article--------------*/
+.full-article {
+    margin: 0 0 30px 0
+}
+.img-right img {
+    float: right;
+    margin: 0 5px 5px 0;
+}
+.img-left img {
+    float: left;
+    margin: 0 5px 5px 0;
+}
+.full-article img + p {
+    font-style: italic;
+}
+.full-article p {
+    margin: 0 0 10px 0;
+}
+/*----------/Article-------------*/
+/*-------------/Main-content----------------*/
+/*-------------Sidebar-footer----------------*/
+#sidebar-border {
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 11px;
+    position: absolute;
+    top: -11px;
+    width: 100%;
+}
+#sidebar-footer {
+    background: #b4d0ea;
+    float: left;
+    width: 100%;
+    padding: 10px 0 20px 0;
+    position: relative;
+}
+#sidebar-footer,
+#sidebar-footer h3{
+    color:#ffffff;
+}
+#sidebar-footer .content {
+    margin: 0 50px 0 0;
+    width: 250px;
+    float: left;
+}
+#sidebar-footer .first-column {
+    margin: 0 0 0 100px;
+}
+#contacts dl dt,
+#contacts dl dd{
+    float: left;
+}
+#contacts dl {
+    width: 250px;
+}
+#contacts dl dt {
+    width: 90px;
+}
+#contacts dl dd {
+    width: 160px;
+}
+input[type="text"] {
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+}
+/*-------------/Sidebar-footer----------------*/
+/*-------------copyright----------------*/
+#copyright {
+    width: 100%;
+    float: left;
+    background: #cadef0;
+    text-align: center;
+    padding: 20px 0;
+    color:#8a8a8a;
+}
+/*-------------/copyright----------------*/
+/*-------------buttons----------------*/
+.more-link {
+    display: block;
+    color: #287FC3;
+    background-color: #f3f3f3;
+    border: #cecece;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    font: 18px/20px 'Newbaskn';
+    padding: 8px 16px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.more-link:hover {
+    background-color: #DDDDDD;
+    color: #4c4c4c;
+}
+.more-link:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
+    text-decoration: none;
+}
+#sidebar-footer .more-link, input[type="submit"] {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #058caf;
+    font: 14px/18px 'Newbaskn';
+    padding: 5px 10px;
+    position: static;
+    margin: 10px 0 0 0;
+}
+#sidebar-footer input[type="submit"] {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #058caf;
+    font: 14px/18px 'Newbaskn';
+    margin: 0 0 0 5px;
+    border: #cecece;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+#sidebar-footer .more-link:hover,
+#sidebar-footer input[type="submit"]:hover{
+    background-color: #007DA0;
+    color: #C7C7C7;
+}
+#sidebar-footer .more-link:active,
+#sidebar-footer input[type="submit"]:active{
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
+    background-color: #007DA0;
+    color: #C7C7C7;
+}
+/*-------------/buttons----------------*/
+/*------------- ContactUs----------------*/
+#userMessage {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 80px 0;
+}
+#userMessage fieldset {
+    width: 100%;
+}
+#userMessage label {
+    width: 17%;
+    float: left;
+}
+#userMessage label,
+#userMessage input,
+#userMessage textarea {
+    margin: 5px 0;
+}
+#userMessage input{
+    width: 37%;
+}
+ #userMessage textarea{
+    width: 77%;
+    min-width: 77%;
+    max-width: 77%;
+
+}
+#userMessage input, #userMessage textarea{
+    float: left;
+    border: 1px solid #E5E5E5;
+    border-radius: 0px;
+    color: #888;
+}
+#userMessage input[type="submit"] {
+    background-color: #F3F3F3;
+    border: medium none #CECECE;
+    border-radius: 4px 4px 4px 4px;
+    bottom: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #287FC3;
+    display: block;
+    font: 18px/20px 'Newbaskn';
+    padding: 8px 16px;
+    position: absolute;
+    right: 6%;
+    text-decoration: none;
+    width: 30%;
+}
+#userMessage input[type="submit"]:hover {
+    background-color: #DDDDDD;
+    color: #4C4C4C;
+}
+/*-------------/ContactUs----------------*/

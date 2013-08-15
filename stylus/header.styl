@@ -4,30 +4,25 @@
 /*--------HEADER---------*/
 upperLine-height = 2em
 upperLine-border = 0.25em
+
 .page-header
-    margin-top upperLine-height+upperLine-border
     background: BG-main-bg repeat #000
-    padding: 0.625em 0
+    padding: 1rem 0
     min-height: 1rem
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    z-index 100
+@media screen and (max-height: 700px)
+    .page-header 
+        padding 0.5rem 0
 
 .upper-line
-    border-top: solid #cc3333 upperLine-border
     background: color-black
-    overflow: hidden
-    zoom: -1
-    height: upperLine-height
-    min-height: upperLine-height
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-@media screen and (max-width: 400px) 
-    .upper-line 
-        background BG-main-bg repeat
+    position relative
+    z-index 10000
 
 .quick-access 
     position: absolute
-    top: -2.625rem
+    top: -3rem
     right: 0
     color: white
     font-size: 0.75rem 
@@ -37,26 +32,6 @@ upperLine-border = 0.25em
         float left
         line-height upperLine-height +0.4rem
 
-    .checkout-button 
-        float: right        
-        padding-right: pR = 0.8rem
-        padding-left: pL = 2.75rem
-        min-width: checkout-button_minWidth = 6rem - (pL + pR)
-        max-width: 8rem - (pL + pR)
-        height: checkout-button_heignt = 2.875rem
-        line-height: checkout-button_heignt
-        background: color-red
-        font-size: font-size + 0.25em
-        margin-right: 0.125rem
-        border-radius: 0 0 1.125rem 1.125rem/0 0 1rem 1rem
-        background-image: BG-icon-cart
-        background-repeat: no-repeat
-        background-position: 10px 6px
-        overflow: hidden
-        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3)
-        &:hover
-            cursor: pointer
-            text-decoration: underline
     
 
 
@@ -95,21 +70,27 @@ upperLine-border = 0.25em
 
 .block-logo
     position: relative
-    width: blockLogo_Width = 12em
+    width: blockLogo_Width = 21rem
     overflow: hidden    
 
     .logo-link 
-        color: color-black
-        width: blockLogo_Width
-        display: block
-        &:hover
-            color: color-red
+        background: none repeat scroll 0 0 color-red;
+        display: block;
+        float: left;
+        height: 3.125rem;
+        width: 3.125rem;
 
     .company-name
-        position: absolute
-        top: 50%
-        margin: -1rem 0 0 0.175em
-        font-size: 2em
+        font-family: Oswald;
+        font-size: 2em;
+        font-weight: 400;
+        margin: -1.5rem 0 0 0.175em;
+        position: absolute;
+        top: 50%;
+        left: 3.5rem
+        color color-black
+        &:hover
+            color color-red
 
 @media screen and (max-width: 800px) 
     .block-logo
@@ -156,6 +137,15 @@ upperLine-border = 0.25em
         padding-left: 2rem
         padding-right: 0.625rem    
         height 100%  
+    .main-nav.default.level_1>.item>.ext-site
+        color: color-red
+        &:hover
+            text-decoration underline
+    .main-nav.default.level_1>.item .active
+        color: #BABABA
+        &:hover
+            color: #BABABA
+            cursor default
 
     .has-subMenu 
         background BG-icon-subMenu no-repeat right 50%
@@ -168,10 +158,10 @@ upperLine-border = 0.25em
         top: 2.5rem
         left: 1.875rem
         min-width 12.5rem
-        background white
-        opacity 0.8
+        background white        
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
         border-bottom 5px solid color-red
+        opacity 0.9
         .link
             border-bottom: 1px solid #EEEEEE;
             display: block;
@@ -180,7 +170,6 @@ upperLine-border = 0.25em
             margin: 0 0.625rem;
             padding: 0.625rem 0;
             text-decoration: none;
-            width: 100%;
             font-weight normal;
             color: color-black;
     .main-nav.resp

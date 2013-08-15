@@ -1,0 +1,87 @@
+.dark {
+    background: url("../images/borders-section-bg.png") repeat top left #202020;
+    color: #fff;
+}
+.dark a,
+.dark a:visited{
+    color: #C95039;
+    text-decoration: underline;
+}
+.dark a:hover {
+    text-decoration: none;
+}
+#borders-decoration li{
+    padding: 3%;
+}
+#borders-decoration .box p {
+    font-size: 90%;
+}
+#borders-decoration .container {
+    width: 82%;
+    padding: 2%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#borders-decoration .container .box {
+    float: left;
+    margin-right: 2%;
+}
+#borders-decoration .box {
+    padding: 4%;
+    width: 40%;
+    margin: 0 auto;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+#borders-decoration .shadow {
+    border: 1px solid #f0f0f0;
+    border-bottom: 2px solid #ccc;
+    background-color: #EEEEFF;
+}
+#borders-decoration .pressed {
+    background: #191919;
+    border: 1px solid #171717;
+    border-right: 1px solid #3e3e3e;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+#borders-decoration .beveled-light {
+    outline: 1px solid #ddd;
+    border-top: 1px solid #fff;
+    background: #f0f0f0;
+    border-radius: 0px;
+}
+#borders-decoration .beveled-dark {
+    outline: 1px solid #111;
+    border-top: 1px solid #555;
+    background: #333;
+    border-radius: 0px;
+}
+/*------- Indented Lines-----------*/
+#indented-lines {
+    padding: 3%;
+}
+ .indented {
+    background-color: #222222;
+    padding: 1% 3%;
+    margin: 3% 33%;
+}
+ .indented ul{
+    list-style: none;
+}
+ .indented ul li {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #111;
+    padding: 10px 0;
+}
+ .indented ul .first-child {border-top: none;}
+ .indented ul .last-child {border-bottom: none;}
+ .indented ul li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.indented ul li a:hover {background: #111;}
+/*------- /Indented Lines-----------*/

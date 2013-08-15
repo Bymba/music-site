@@ -1,0 +1,35 @@
+/*------------  footer section----------------*/
+#footer-bottom figure {
+    float: left;
+    width: 30%;
+    margin: 20px 0 0 0;
+}
+#footer-bottom div a {
+    color: #C95039;
+    text-decoration: underline;
+}
+#footer-bottom a:hover {
+    color: #C95039;
+    text-decoration: none;
+}
+#footer-bottom div {
+    padding: 40px 0 0 35%;
+    width: 55%;
+}
+#footer-bottom div p {
+    padding: 0 0 10px 0;
+}
+#footer-bottom div li {
+    list-style: disc inside;
+    padding: 0 0 10px 0;
+}
+/*------------ /footer section----------------*/
+/*--------- Equal height section-------------*/
+#equal-height-columns .sublevel {
+    margin: 0 0 0 20px;
+    list-style: disc;
+}
+#equal-height-columns .changeColor{
+    color: #444;
+}
+/*--------- /Equal height section-------------*/

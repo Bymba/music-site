@@ -1,0 +1,124 @@
+.sub-page
+  .block > section
+  .block .item
+      padding 1rem 0 2.5rem
+  figure img 
+  	width 100%
+  	height auto
+  @media screen and (max-width: 620px)
+  	p, a, li
+  		font-size 0.785rem
+
+  .portfolio-examples > ul > li {
+	float: left;
+	padding: 0 1% 20px;
+	width: 30%;
+	}
+.page-navigation
+	@media screen and (max-width: 620px)
+		.tabmenu-section
+		.dark-menu-section
+			display none
+		#citrus-menu
+			h4, h3
+				font-size 1rem
+			p 
+				font-size 0.675rem
+			.horizontal-wrapper > section
+				height 150px
+				overflow hidden
+				float: right;
+				width: 45%;
+			.horizontal-wrapper > nav
+				width 50%
+				font-size: 0.6rem
+
+			nav .submenu .submenu > a
+			nav .submenu .submenu:hover > a
+				background-image none
+			nav .submenu .submenu ul
+			nav .submenu .submenu:hover > a:before
+				display none
+		#accordion-menu
+			background: none 
+			article
+				display none
+			nav
+				float: none
+				margin: 0 auto
+
+
+
+@media screen and (max-width: 620px)
+	.page-templates
+		.portfolio-examples > ul > li
+			width 48%
+		.portfolio-examples 
+			.gallery.tape
+				width 60%
+				margin 0 auto
+				&>li
+					width 100%
+.portfolio-examples figure > a:before {
+    bottom: 19px;
+    box-shadow: 0 15px 7px rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 20%;
+    left: 10px;
+    position: absolute;
+    right: auto;
+    transform: rotate(-4deg);
+    width: 70%;
+    z-index: -1;
+}
+.portfolio-examples figure a {
+    display: block;
+    position: relative;
+}
+.portfolio-examples figcaption {
+  color: #444444;
+  font: 16px sans-serif,Arial;
+  margin: 5px 0 10px;
+  padding: 5px 0;
+}
+#footer-bottom .titleborder
+	padding 0
+	width 95%
+.portfolio-examples > ul
+	overflow hidden
+
+@media screen and (max-width: 900px)	
+	#font-faces
+		display none
+
+@media screen and (max-height: 900px)
+	#font-faces
+		display none
+
+@media screen and (max-width: 950px)
+	.js-templates #slider01
+		display none	
+
+
+.page-buttons 
+		a 
+			text-decoration none
+@media screen and (max-width: 450px)
+	#border-radius-buttons a
+		padding: 0.5em;
+		font-size: 0.675rem;		
+@media screen and (max-width: 840px)
+	.page-buttons #keyboard
+		display none
+	#border-radius-buttons .symbol
+			display none
+@media screen and (max-width: 450px)
+	.page-buttons 
+		.dark_stretchy_button > span
+			font-size 1rem
+			span 
+				font-size 0.875rem
+
+@media screen and (max-width: 450px)
+	.page-boxes #box-shadows .drop-shadow
+		width 60%

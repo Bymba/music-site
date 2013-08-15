@@ -1,0 +1,218 @@
+/* --------  fonts ---------*/
+
+@font-face {
+    font-family: 'RockSalt';
+    src: url('../fonts/RockSalt.eot');
+    src: url('../fonts/RockSalt.woff') format('woff'),
+        url('../fonts/RockSalt.ttf') format('truetype'),
+        url('../fonts/RockSalt.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: League_Gothic;
+    src: url('../fonts/League_Gothic-webfont.eot');
+    src: url('../fonts/League_Gothic-webfont.woff') format('woff'),
+        url('../fonts/League_Gothic-webfont.ttf') format('truetype')
+        url('../fonts/League_Gothic-webfont.svg') format('svg');
+}
+@font-face {
+    font-family: 'Yellowtail';
+    src: url('../fonts/yellowtail-regular-webfont.eot');
+    src: url('../fonts/yellowtail-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/yellowtail-regular-webfont.woff') format('woff'),
+    url('../fonts/yellowtail-regular-webfont.ttf') format('truetype'),
+    url('../fonts/yellowtail-regular-webfont.svg#yellowtailregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yesteryear';
+    src: url('../fonts/yesteryear-regular-webfont.eot');
+    src: url('../fonts/yesteryear-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/yesteryear-regular-webfont.woff') format('woff'),
+    url('../fonts/yesteryear-regular-webfont.ttf') format('truetype'),
+    url('../fonts/yesteryear-regular-webfont.svg#yesteryearregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_DroidSans';
+    src: url('../fonts/DroidSans.eot');
+    src: url('../fonts/DroidSans.woff') format('woff'),
+    url('../fonts/DroidSans.ttf') format('truetype'),
+    url('../fonts/DroidSans.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------  fonts ---------*/
+
+#font-faces {
+    width: 100%;
+    height: 900px;
+    margin: 10 0;
+    font-size: 20px;
+    position: relative;
+}
+.Conv_DroidSans {
+    font-family: Conv_DroidSans;
+}
+.League_Gothic {
+    font-family: League_Gothic;
+    font-size: 20px;
+}
+.Yesteryear {
+    font-family: Yesteryear;
+    color: #444;
+    background: none;
+}
+.Yellowtail {
+    font-family: Yellowtail;
+    color: #444;
+    background: none;
+}
+.RockSalt {
+    font-family: RockSalt;
+    color: #444;
+    background: none;
+}
+.style2 {
+    font-size: 230px;
+    font-weight: 100;
+    left: 430px;
+    position: absolute;
+    top: 475px;
+}
+.styleo {
+    font-size: 180px;
+    font-style: italic;
+    font-weight: 100;
+    position: absolute;
+    top: 390px;
+}
+.styleo-left {
+    left: 330px;
+}
+.styleo-right {
+    left: 580px;
+}
+.styleg {
+     font-size: 400px;
+     font-weight: 200;
+     left: 170px;
+     position: absolute;
+     top: 80px;
+ }
+.styleC {
+    font-size: 400px;
+    font-style: italic;
+    font-weight: 200;
+    left: 344px;
+    position: absolute;
+    top: 35px;
+}
+.style1o {
+    font-size: 314px;
+    font-weight: 200;
+    left: 100px;
+    position: absolute;
+    top: 335px;
+}
+.style1 {
+    font-size: 130px;
+    font-weight: 200;
+    left: 370px;
+    position: absolute;
+    top: 790px;
+}
+.style3 {
+    font-size: 230px;
+    font-style: italic;
+    font-weight: 200;
+    left: 730px;
+    position: absolute;
+    top: 600px;
+}
+.style4 {
+    font-size: 257px;
+    font-weight: 200;
+    left: 744px;
+    position: absolute;
+    top: 397px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari and Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+    -moz-transform: rotate(180deg); /* Firefox */
+}
+.style41 {
+    font-size: 315px;
+    font-weight: 200;
+    left: 103px;
+    position: absolute;
+    top: 547px;
+}
+.style5 {
+    font-size: 128px;
+    font-weight: 200;
+    left: 529px;
+    position: absolute;
+    top: 128px;
+}
+.style6 {
+    font-size: 264px;
+    font-weight: 200;
+    left: 642px;
+    position: absolute;
+    top: 54px;
+}
+.style7 {
+    font-size: 180px;
+    font-style: italic;
+    font-weight: 200;
+    left: 323px;
+    position: absolute;
+    top: 852px;
+    transform: rotate(270deg);
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari and Chrome */
+    -o-transform: rotate(270deg); /* Opera */
+    -moz-transform: rotate(270deg); /* Firefox */
+}
+.style8 {
+    font-size: 169px;
+    font-style: italic;
+    font-weight: 100;
+    left: 492px;
+    position: absolute;
+    top: 742px;
+}
+.style81 {
+    font-size: 169px;
+    font-style: italic;
+    font-weight: 100;
+    left: 637px;
+    position: absolute;
+    top: 566px;
+}
+.style82 {
+    font-size: 169px;
+    font-style: italic;
+    font-weight: 100;
+    left: 169px;
+    position: absolute;
+    top: 720px;
+}
+.style9 {
+    font-size: 180px;
+    font-style: italic;
+    font-weight: 100;
+    left: 771px;
+    position: absolute;
+    top: 311px;
+    transform: rotate(270deg);
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari and Chrome */
+    -o-transform: rotate(270deg); /* Opera */
+    -moz-transform: rotate(270deg); /* Firefox */
+}

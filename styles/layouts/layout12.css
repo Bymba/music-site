@@ -1,0 +1,64 @@
+body {
+    font: 12px/14px sans-serif;
+    width: 900px;
+    margin: 0 auto;
+}
+#header h1{
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #79B30B;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    text-align: center;
+}
+
+#content {
+    margin: 0 300px;
+    overflow: hidden;
+}
+#wrapper {
+    width: 100%;
+    float: left;
+}
+
+.bar {
+    float: left;
+    width: 300px;
+}
+#navigation {
+    margin: 0 0 0 -100%;
+}
+#sidebar {
+    margin: 0 0 0 -300px;
+}
+.idea-description {
+    font-size: 120%;
+    color: #FFFFFF;
+    padding: 0 10px;
+}
+/*footer to bottom of the window*/
+body,
+html{
+    height: 100%;
+}
+#container {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    background: url("../../images/columns-bg.png") repeat-y 0 0;
+}
+#footer {
+    height: 1.3em;
+    background-color: #8C8887;
+    color: #FFFFFF;
+    padding: 1em;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0;
+}
+#h-content-wrapper {
+    clear: both;
+    height: 3.8em; /*this is space between main content and footer. It's height should be = footer height + required padding after content*/
+}

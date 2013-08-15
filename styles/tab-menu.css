@@ -1,0 +1,137 @@
+/*general styles*/
+#tabmenu {
+    position: relative;
+    background: url("../images/tabmenu-bg.png") repeat 0 0 #1c93b5;
+    height: 170px;
+    padding: 3% 1%;
+}
+#tabmenu ul li {
+    list-style: none inside none;
+    position: static;
+    color: #f7f7f7;
+}
+#tabmenu li ul {
+    display: none;
+}
+#tabmenu li a {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+/*1st level*/
+#tabmenu>ul>li {
+    float: left;
+}
+#tabmenu>ul{
+    float: right;
+}
+#tabmenu>ul:before {
+    display: block;
+    width: 100%;
+    height: 35px;
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: -2px;
+    z-index: 1;
+    border: solid 1px #111111;
+    background: rgb(65,111,167); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(65,111,167,1) 0%, rgba(33,67,106,1) 80%, rgba(33,67,106,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,111,167,1)), color-stop(80%,rgba(33,67,106,1)), color-stop(100%,rgba(33,67,106,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(65,111,167,1) 0%,rgba(33,67,106,1) 80%,rgba(33,67,106,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(65,111,167,1) 0%,rgba(33,67,106,1) 80%,rgba(33,67,106,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(65,111,167,1) 0%,rgba(33,67,106,1) 80%,rgba(33,67,106,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(65,111,167,1) 0%,rgba(33,67,106,1) 80%,rgba(33,67,106,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#416fa7', endColorstr='#21436a',GradientType=0 ); /* IE6-9 */
+}
+#tabmenu>ul>li>div, #tabmenu>ul:hover>li:first-child>div{
+    text-align: center;
+    padding: 5px 15px;
+    border-top: solid 1px #111111;
+    border-left: solid 1px #111111;
+    border-right: solid 1px #111111;
+    z-index: 2;
+    background: url("../images/tabmenu-bg-blue.gif") no-repeat scroll 0 bottom #21436A;
+    color: #f7f7f7;
+    position: relative;
+}
+#tabmenu>ul:hover>li:first-child>div {
+    border-bottom: solid 1px #111111;
+}
+#tabmenu>ul>li:first-child>div, #tabmenu>ul>li:hover>div, #tabmenu>ul:hover>li:first-child:hover>div{
+    border-bottom: solid 1px rgb(65,111,167);
+    background:rgb(65,111,167);
+}
+#tabmenu .fixforIE  {
+    display: block;
+    width: 100%;
+    height: 35px;
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: -2px;
+    z-index: 1;
+    border: solid 1px #111111;
+    background: rgb(65,111,167); /* Old browsers */
+    background: -ms-linear-gradient(top, rgba(65,111,167,1) 0%,rgba(33,67,106,1) 80%,rgba(33,67,106,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(65,111,167,1) 0%,rgba(33,67,106,1) 80%,rgba(33,67,106,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#416fa7', endColorstr='#21436a',GradientType=0 ); /* IE6-9 */
+}
+
+/*2nd level*/
+#tabmenu ul>li:hover>.submenu,#tabmenu>ul:hover>li:first-child:hover .submenu, #tabmenu>ul>li:first-child .submenu {
+    display: block;
+}
+#tabmenu>ul:hover>li:first-child .submenu  {
+    display: none;
+}
+#tabmenu ul .submenu {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 2;
+    width: 98%;
+    padding-right: 1%;
+}
+#tabmenu .submenu>li {
+    padding: 14px 20px;
+    float: right;
+}
+#tabmenu .submenu li:hover>a{
+    color: #C95039;
+}
+#tabmenu .submenu li li a:hover {
+    color: #C95039;
+}
+#tabmenu .submenu li{
+    position: relative;
+}
+#tabmenu .submenu li:hover ul{
+    display: block;
+}
+#tabmenu .submenu li ul{
+    position: absolute;
+    top:40px;
+    left:0px;
+    border-bottom: solid 1px #111;
+    border-left: solid 1px #111;
+    border-right: solid 1px #111;
+    width: 100%;
+}
+#tabmenu .submenu li ul li {
+    display: block;
+    font-size: 80%;
+    background-color: rgba(33,67,106,1);
+    position: relative;
+    min-width: 100%;
+}
+#tabmenu .submenu li ul li a{
+    display: block;
+    padding: 8px 20px;
+}
+#tabmenu .submenu li ul li a:hover:after {
+    position: absolute;
+    content: ">";
+    top: 9px;
+    left: 7px;
+}

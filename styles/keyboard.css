@@ -1,0 +1,145 @@
+/*general styles*/
+#keyboard a {
+    color: #AAAAAA;
+    font: bold 9pt arial;
+    text-align: center;
+    text-shadow: 0 -1px 0 #000000;
+    text-decoration: none;
+}
+#keyboard .keyboard-container {
+    background: url("../images/keyboard-background.jpg") repeat-x scroll 0 0 #D5D9DC;
+    border-radius: 7px 7px 10px 10px / 21px 21px 10px 10px;
+    box-shadow: 0 0 8px #BBBBBB inset, 0 1px 0 #AAAAAA, 0 4px 0 #BBBBBB, 0 10px 30px #111111;
+    height: 315px;
+    margin: 50px auto;
+    padding: 50px 0 0 10px;
+    width: 794px;
+}
+#keyboard>div>ul {
+    margin: 4px 0;
+    overflow: hidden;
+    position: relative;
+}
+#keyboard li {
+    float: left;
+    list-style: none;
+    padding: 4px 0;
+}
+#keyboard li a{
+    list-style: none;
+    display: block;
+    background-color: #222222;
+    width: 44px;
+    height: 41px;
+    border-radius: 4px;
+    box-shadow: 0 0 25px #333333 inset, 0 1px 0 #000000, 0 2px 0 #222222, 0 2px 3px #333333;
+    text-align: center;
+    position: relative;
+}
+
+
+#keyboard .alternative {
+    padding: 6px 0 0 0;
+    height: 35px;
+}
+#keyboard .alternative span {
+    display: inline-block;
+    width: 100%;
+}
+#keyboard .letter span {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top:12px;
+    left: 0;
+}
+#keyboard .right-command>span, #keyboard .left-command>span{
+    position: absolute;
+    bottom: 5px;
+    text-transform: lowercase;
+    font-size: 85%;
+}
+#keyboard .right-command span{
+    right: 8px;
+}
+#keyboard .left-command span{
+    left: 8px;
+}
+/*1st line*/
+#keyboard #first-line li {
+    margin: 0px 6px;
+}
+#keyboard #first-line li a{
+    height: 21px;
+    width: 46px;
+    margin: 0 -1px;
+    padding: 5px 0 0;
+}
+#keyboard #first-line li a span{
+    font-size: 90%;
+}
+#keyboard #first-line li:first-child~li a span{
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+}
+#keyboard #first-line li:last-child a span{
+    text-transform: uppercase;
+}
+/*2-5 lines styles*/
+#keyboard #numbers li, #keyboard #qwerty li, #keyboard #asdfg li, #keyboard #zxcvb li, #keyboard #bottomrow li {
+    margin: 0px 5px;
+}
+#keyboard #tab, #keyboard #delete {
+    width: 72px;
+}
+#keyboard #caps, #keyboard #enter {
+    width: 85px;
+}
+#keyboard #shiftleft, #keyboard #shiftright {
+    width: 112px;
+}
+/*last line*/
+#bottomrow>li a{
+    height: 49px;
+}
+#keyboard #spacebar {
+    width: 226px;
+}
+#keyboard #control {
+    width: 56px;
+}
+#keyboard #commandright, #keyboard #commandleft {
+    width: 67px;
+}
+
+#keyboard .arrows li a {
+    height: 22px;
+}
+#keyboard .arrows {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+#keyboard .arrows #left, #keyboard .arrows #right {
+    padding-top: 31px;
+}
+#keyboard #up-down a:first-child {
+    margin: 0 0 4px 0;
+}
+/*activate styles*/
+
+#keyboard li a:active{
+    box-shadow: 0 0 25px #333333 inset, 0 0 3px #333333;
+    color: #888888;
+    /*border-top: 1px solid #000000;*/
+}
+#keyboard  li a.alternative:active,#keyboard #first-line li a.fixed:active {
+    padding: 4px 0 0 0;
+}
+#keyboard ul li a.letter:active,#keyboard ul li a.fixed:active {
+    height: 40px;
+}
+#keyboard .arrows li a:active{
+    border-top: 0px;
+}

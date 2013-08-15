@@ -1,0 +1,44 @@
+body {
+    font: 12px/14px sans-serif;
+}
+#header h1{
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #79B30B;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    text-align: center;
+}
+#footer {
+    background-color: #8C8887;
+    color: #FFFFFF;
+    margin: 1em 0;
+    clear: both;
+    width: 100%;
+    padding: 1em 0;
+}
+#footer p {
+    margin: 0 1em;
+}
+
+#content {
+    background-color: #CF7F18;
+    margin: 0 210px 0 310px;
+}
+#wrapper {
+    position: relative;
+}
+.bar {
+    position: absolute;
+    top:0;
+}
+#navigation {
+    background-color: #147AA3;
+    left: 0;
+    width: 300px;
+}
+#sidebar {
+    background-color: #7A1846;
+    right: 0;
+    width: 200px;
+}

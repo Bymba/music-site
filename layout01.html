@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Three percentage columns</title>
+    <link rel="stylesheet" href="styles/layouts/layout01.css"/>
+</head>
+<body>
+<div id="container">
+    <div id="header"><h1>Task of creating a three-column percentage layout with a header and footer in which the content needed to come before the sidebar in the source code.</h1></div>
+
+    <div id="wrapper">
+        <div id="content">
+            <p><strong>1) Content here.</strong> very make make fill silly long long filler column long make silly silly column filler fill fill very filler text fill filler column make fill make text very make make very fill fill long make very filler column very long very filler silly very make filler silly make make column column </p>
+            <p>fill long make long text very make long fill column make text very silly column filler silly text fill text filler filler filler make make make make text filler fill column filler make silly make text text fill make very filler column very </p>
+            <p class="idea-description">The main content area should be on the center, with the sidebar on the right and navigation bar on the left. This would normally be a very simple process, but we are changing things around a bit because we want our source code to be structured in a certain way.</p>
+            <p class="idea-description">Thus negative margins have been used to place the navigation bar (margin-left: -100%) and sidebar (margin-left: -33%), to content section applied: margin 0 33% and width:100% + All columns (.bar and .wrapper) are left floated elements</p>
+            <p>fill long make long text very make long fill column make text very silly column filler silly text fill text filler filler filler make make make make text filler fill column filler make silly make text text fill make very filler column very </p>
+
+        </div>
+    </div>
+    <div id="navigation" class="bar">
+        <p><strong>2) Navigation here.</strong> long long fill filler very fill column column silly filler very filler fill fill filler text fill very silly fill text filler silly silly filler fill very make fill column text column very very column fill fill very silly column silly silly fill fill long filler </p>
+
+    </div>
+    <div id="sidebar" class="bar">
+        <p><strong>3) More stuff here.</strong> very text make long silly make text very very text make long filler very make column make silly column fill silly column long make silly filler column filler silly long long column fill silly column very </p>
+
+    </div>
+    <div id="footer">
+        <p>The footer. You can go to the <a href="page-templates.html">layouts gallery</a> or to the <a href="index.html">home page</a>.</p>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/fillerText.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        AddFillerLink("content", "navigation", "sidebar");
+    }
+</script>
+</body>
+</html>

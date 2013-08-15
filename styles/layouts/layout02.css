@@ -1,0 +1,37 @@
+body {
+    font: 12px/14px sans-serif;
+}
+#header h1{
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #79B30B;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    text-align: center;
+}
+#footer {
+    background-color: #8C8887;
+    color: #FFFFFF;
+    padding: 1em;
+}
+#footer p {
+    margin: 0 1em;
+}
+#wrapper{
+    overflow: hidden;
+}
+#content {
+    margin: 0 0 0 270px;
+    background-color: #CF7F18;
+}
+#navigation {
+    background-color: #147AA3;
+    width: 260px;
+    float: left;
+}
+.idea-description {
+    font-size: 120%;
+    color: #FFFFFF;
+    padding: 0 10px;
+}
+

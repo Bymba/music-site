@@ -1,0 +1,110 @@
+#citrus-menu {
+    height: 445px;
+    background: url("../images/citrus-menu-bg.jpg") no-repeat center center;
+    position: relative;
+    overflow: hidden;
+}
+#citrus-menu .horizontal-wrapper{
+    position: absolute;
+    top: 110px;
+    left:3px;
+    height: 200px;
+    width: 80%;
+    border-top: 3px solid #E69623;
+    border-bottom: 3px solid #E69623;
+    background: #ffffff;
+    opacity: 0.9;
+    padding: 0 10%;
+}
+#citrus-menu .horizontal-wrapper>section {
+    width: 65%;
+    float: left;
+    padding: 4% 0 0 0 ;
+}
+#citrus-menu .horizontal-wrapper>nav {
+    width: 27%;
+    float: left;
+    margin-right: 3%;
+}
+#citrus-menu nav>ul>li>a, #citrus-menu nav>h3{
+    text-align: right;
+}
+#citrus-menu h3, #citrus-menu h3 {
+    color: #9CA716;
+}
+#citrus-menu h3 {
+    font: normal 24px/24px sans-serif;
+    padding-right: 20px;
+}
+#citrus-menu p {
+    font-size: 14px;
+}
+#citrus-menu h4 {
+    font: normal 20px/20px sans-serif;
+    text-transform: none;
+    border: 0px;
+}
+
+nav li>div {
+    display: none;
+}
+#citrus-menu nav a{
+    text-decoration: none;
+    display: block;
+    color: #CF7F18;
+    padding: 5px 20px 5px 0;
+    text-align:right;
+    background-color: #ffffff;
+}
+#citrus-menu nav .submenu:hover>a:before {
+    position: absolute;
+    top:0px;
+    right: 15px;
+    z-index: 3;
+    content: "";
+    width:1px;
+    height: 100%;
+    background-color: #ffffff;
+}
+#citrus-menu nav li:hover {
+    background-color: #CF7F18;
+    color: #ffffff;
+}
+#citrus-menu nav li:hover>a{
+    color: #ffffff;
+    background-color: #CF7F18;
+}
+#citrus-menu nav .submenu:hover>a{
+    color: #ffffff;
+}
+#citrus-menu nav .submenu>a {
+    background: url("../images/citrus-arrow-right.gif") no-repeat center right #ffffff;
+}
+#citrus-menu nav .submenu>a:hover  {
+    background: url("../images/citrus-arrow-right-over.gif") no-repeat center right #CF7F18;
+    color: #ffffff;
+}
+#citrus-menu nav li {
+    position: relative;
+    background-color: red;
+}
+#citrus-menu nav div {
+    padding: 0 10px;
+}
+#citrus-menu nav .submenu:hover>div {
+    display: block;}
+#citrus-menu nav .submenu div {
+    position: absolute;
+    top:-1px;
+    left: 100%;
+    z-index: 3;
+    }
+#citrus-menu nav .submenu div ul {
+    border: solid 1px #9CA716;
+    background-color: #ffffff;
+}
+#citrus-menu nav .submenu ul a{
+    text-align: left;
+    padding-left: 10px;
+}
+

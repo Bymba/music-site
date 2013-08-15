@@ -1,0 +1,176 @@
+@import "mixins"
+@import "images"
+.page-description
+	background white
+	padding-bottom 0.25rem
+	border-bottom 1px solid #efefef
+.outerpagewrap
+	background color-red
+	color: white
+	padding-bottom 1rem
+	border-bottom 0.25rem solid	
+	a 
+		color white
+		text-decoration none
+		&:hover
+			text-decoration underline
+	.page-navigation
+		position relative
+		.link-toHome
+			background BG-icon-home no-repeat
+			display block
+			width 2.5rem
+			height 2.5rem
+			position absolute
+			top 40%
+			right 0	
+		@media screen and (max-width: 1190px)
+			.link-toHome
+				display none
+	.page-title
+		font-size: 1.75rem;
+		padding: 1.25rem 0 0.94rem;
+		text-transform: uppercase;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2)
+	@media screen and (max-width: 230px)
+		.page-title
+			font-size: 1rem
+	@media screen and (max-width: 900px)
+		.page-navigation
+			padding: 0 1rem
+
+@media screen and (max-height: 700px)
+	.outerpagewrap 
+		display none
+
+.portfolio-list
+	overflow hidden
+	&>.item
+		background: #FFFFFF;
+.portfolio-filters 
+	width 100%
+	.item
+		background: BG-icon-titleSeparator no-repeat scroll right center transparent;
+		float: left;
+		font-size: 14px;
+		margin-right: 10px;
+		padding: 10px 15px 9px 0
+		text-transform uppercase
+		a
+			color color-black
+			text-decoration none
+			&:hover
+				 color: color-red
+.twoCols
+	width 100%
+	.borderLine
+		height 1rem
+		font-size 0.6875rem
+		color white
+		text-align center
+		margin 0.5rem auto
+		.borderLineLeft
+			height auto
+			position relative
+			margin-right 0.2rem
+			z-index: 100
+			width auto
+			padding 0 0.2rem
+		.borderLineRight
+			top	0.4rem
+	.item
+		margin-right: 1.7%
+		width 46%
+		border: 1px solid #EEEEEE
+		margin-bottom: 18px
+		@media screen and (min-width: 901px)
+			figcaption
+				margin 0.3rem 0.5rem 0.3rem 0
+				height 8.775rem 
+				overflow hidden
+
+	.img-container
+		float: left
+		position: relative
+		margin-top	-0.3rem
+		.overdefult
+			width 94%		
+			padding-top	16%
+			font-size: 0.685rem
+		&:hover
+			.overdefult
+				height 58%
+	.item-image 
+		display block
+		width 13rem
+		margin-right: 1rem
+		height 9.965rem
+		overflow hidden
+	 	img 
+			width 100%
+	 		height auto
+
+@media screen and (max-width: 900px)
+	.twoCols	
+		h3
+			height 1.2rem
+		.item
+			width 45%
+			margin: 1rem 2.5% 1rem 0
+			border none
+		& > .item
+			background none
+		.item-image
+			border: 1px solid #1E1E20;
+			border-radius: 5px 5px 5px 5px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+			width: 100%;
+		
+		.item-image 
+			width 100%
+			margin-right: 1%
+			height 65.21%
+			overflow hidden
+		.img-container
+			width 100%
+			float none
+			 .overdefult
+				width 100%
+			&:hover 
+				.overdefult
+					height 100%
+		.portfolio-item-desc
+			text-align center
+			background #fff
+			padding 1rem 4%
+			width 90%
+			border-radius: 5px 5px 5px 5px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: #EEEEEE #EEEEEE #CCCCCC;
+			margin-top: -5px
+			margin-left: 1%
+@media screen and (max-width: 700px)
+	.twoCols	
+		h3
+			font-size 0.8rem
+@media screen and (max-width: 600px)
+	.twoCols
+		h3
+			font-size 1rem
+		.item
+			width 90%
+			margin: 1rem 5% 1rem
+			border none
+	.portfolio-filters .item
+		font-size 0.8rem
+		margin-right 0.3125rem
+		padding-right 0.625rem
+@media screen and (max-width: 400px)
+	.portfolio-filters .item
+		font-size 0.7rem
+		margin-right 0
+		padding-right 0.625rem
+		background none

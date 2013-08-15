@@ -1,0 +1,730 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea {
+    padding: 0;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+ul {
+    list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- General settings ---------*/
+html {
+    overflow-y: scroll;
+}
+body {
+    line-height: 1;
+    background: #fff;
+    color: #000;
+    text-align: left;
+    font: 10px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+.main-wraper{
+    width: 960px;
+    margin: 0 auto;
+}
+.left-column {
+    width: 700px;
+    float: left;
+}
+.left-column>ul>li, .left-column>li{
+    float: left;
+    width: 30%;
+    padding: 0 3% 0 0;
+    position: relative;
+}
+.right-column {
+    width: 260px;
+    float: left;
+}
+input, select, button, textarea {
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+label, input[type="button"], button[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    color: #0a8ca3;;
+    text-decoration: underline;
+}
+a:hover {
+    color: #0a8ca3;;
+    text-decoration: none;
+}
+a:focus, a:active {
+    color: #287fc3;
+    text-decoration: underline;
+}
+
+/* --------  fonts ---------*/
+@font-face {
+    font-family: League_Gothic;
+    src: url('../fonts/League_Gothic-webfont.eot');
+    src: url('../fonts/League_Gothic-webfont.woff') format('woff'),
+    url('../fonts/League_Gothic-webfont.ttf') format('truetype')
+    url('../fonts/League_Gothic-webfont.svg') format('svg');
+}
+h1 {
+    font: 50px/60px 'League_Gothic';
+    text-transform: lowercase;
+    color: #0a8ca3;
+}
+h2 {
+    font: 14px/16px Arial;
+    margin: 0 0 5px;
+}
+h3 {
+    font: 36px/40px 'League_Gothic';
+    color: #fff;
+    padding: 0 0 10px 0;
+}
+h5 {
+    color: #0A8CA3;
+    display: block;
+    font: 24px/28px "League_Gothic";
+    margin: 20px 0 10px;
+}
+/* -------- /fonts ---------*/
+/* --------------- /General settings ---------*/
+/* ---------------- HEADER -------------------*/
+/* ----------- top-menu -------------*/
+#top-menu {
+    overflow: hidden;
+    position: relative;
+}
+#top-menu>div, #top-menu>ul,
+#subnav {
+    float: right;
+    overflow: hidden;
+    clear:both;
+}
+#top-menu>div {
+    margin: 30px 0 0 0;
+    width: 290px;
+    position: absolute;
+    top: 0;
+    right: 120px;
+    height: 70px;
+}
+#top-menu form {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+#top-menu .input-field {
+    background-color: #EBE4DE;
+    border: medium none;
+    height: 30px;
+    width: 180px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #9A9A9A;
+    float: left;
+    outline: 0;
+}
+#top-menu .input-field:focus {
+    color: #4098A7;
+}
+#top-menu input[type="submit"] {
+    background: url("../images/search.png") no-repeat #ebe4de;
+    border: none;
+    height: 30px;
+    width: 30px;
+    float: left;
+    cursor: pointer;
+    outline: none;
+}
+#subnav {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+#subnav li {
+    float: left;
+    margin: 15px 0 0 0;
+    position: relative;
+}
+#subnav li a {
+    color: #aaaaaa;
+    font: 11px/12px Arial;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0 0 20px;
+}
+#subnav li a:hover {
+    text-decoration: underline;
+}
+#subnav li:first-child ~ li a:before {
+    content: "|";
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+#nav-buttons li {
+    background-color: #5fb7c6;
+    height: 100px;
+    width: 40px;
+    position: relative;
+    float: left;
+    margin: 0 0 0 20px;
+}
+#nav-buttons a {
+    display: block;
+    height: 100%;
+}
+#nav-buttons a:before {
+    display: block;
+    height: 22px;
+    content: "";
+    position: absolute;
+    bottom: 8px;
+}
+#go-home-button a:before {
+    background: url("../images/bg-home.png") no-repeat 0 0;
+    left: 8px;
+    width: 22px;
+}
+#write-email-button a:before {
+    background: url("../images/bg-email.png") no-repeat 0 0;
+    height: 21px;
+    left: 6px;
+    width: 28px;
+}
+/* ----------- /top-menu ------------*/
+/* -----------  main-slider ------------*/
+#main-slider {
+    height: 400px;
+    overflow: hidden;
+    width: 960px;
+    position: relative;
+}
+#main-slider .item{
+    height: 400px;
+    width: 960px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#main-slider img {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+#main-slider .item>div {
+    position: absolute;
+    top: 35%;
+    right: 580px;
+}
+#main-slider h1,
+#main-slider p {
+    text-align: right;
+}
+#main-slider a{
+    text-decoration: none;
+    outline: none;
+}
+#main-slider p {
+    font-size: 22px;
+}
+#main-slider .change-color {
+    color: #c7c7c7;
+}
+/* ----------- /main-slider ------------*/
+
+/* --------------- /HEADER -------------------*/
+/* ---------------  Content -------------------*/
+#content {
+    margin: 10px 0 0;
+    overflow: hidden;
+}
+/* -----------  main-menu ------------*/
+#main-menu {
+    overflow: hidden;
+    width: 700px;
+    margin: 0 0 20px;
+}
+#main-menu li {
+    float: left;
+    padding: 0 40px 0 0;
+    position: relative;
+}
+#main-menu li:after {
+    content: " ";
+    display: block;
+    width: 5px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 100%;
+}
+#main-menu li:last-child:after {
+    display: none;
+}
+#main-menu li a, .full-post .date {
+    display: block;
+    font: 24px/28px "League_Gothic";
+    text-decoration: none;
+    color: #0a8ca3;
+}
+#main-menu li a:hover span{
+    text-decoration: underline;
+}
+#main-menu .current, #main-menu li a:hover {
+    color: #C7C7C7;
+}
+#main-menu .item-description {
+    color: #aaacaf;
+    font: 10px 'Arial';
+    display: block;
+}
+/* ----------- /main-menu ------------*/
+/* --------------  posts-preview ------------*/
+#posts>li {
+    margin: 30px 0 0 ;
+}
+.recent-posts-preview {
+    background: url("../images/homePostBG.jpg") repeat scroll 0 0 #EBE4DE;
+    margin: 0 20px 0 0;
+    padding: 25px 15px;
+    position: relative;
+    width: 180px;
+}
+#posts .recent-posts-preview{
+    height: 392px;
+}
+
+.recent-posts-preview .title {
+    padding: 0 0 30px;
+}
+.recent-posts-preview img {
+    border-radius: 50%;
+    margin: 0 0 0 15px;
+}
+.recent-posts-preview li {
+    float: left;
+}
+.recent-posts-preview .entry-meta {
+    color: #999999;
+}
+.recent-posts-preview .entry-meta li {
+    padding: 0 3px 0 0;
+}
+.recent-posts-preview .entry-meta li:first-child:after{
+    content: " |";
+}
+.recent-posts-preview .entry-content {
+    margin: 0 0 30px 0;
+}
+.recent-posts-preview .entry-content p{
+    margin: 20px 0 0 ;
+}
+.recent-posts-preview .entry-content p,
+.recent-posts-preview a {
+    color: #555555;
+}
+.recent-posts-preview  .comments-link {
+    text-decoration: none;
+    font: 12px 'Arial';
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #aaacaf;
+    text-transform: uppercase;
+    padding: 0 35px 0 ;
+}
+.recent-posts-preview .comments-link:after {
+    display: block;
+    background: url("../images/commentIcon.png") no-repeat 0 0;
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 30px;
+    height: 25px;
+}
+.recent-posts-preview .comments-link:hover {
+    text-decoration: underline;
+    color: #555555;
+}
+/* -------------- /posts-preview ------------*/
+
+/* --------------  full-post ---------------*/
+#post {
+    background: #ebe4de;
+    margin: 0 20px 0 0;
+    min-height: 1285px;
+    height:auto !important;
+    height: 1285px;
+}
+.full-post,
+.post-comments{
+}
+.full-post {
+    border-bottom: solid 1px #FAF3ED;
+}
+.post-comments {
+    border-top: solid 1px #DCD5CF;
+    padding: 0 0 100px;
+}
+.full-post .entry-meta {
+    width: 120px;
+    float: left;
+    text-align: right;
+    padding: 70px 0 0 0;
+}
+.full-post article{
+    margin: 0 20px 0 140px;
+    min-height: 500px;
+    padding: 20px 0 20px 0px;
+    font: 12px/16px Arial;
+}
+.full-post article p {
+    margin: 0 0 10px 0;
+}
+.full-post article h2 {
+    font: bold 22px/30px Arial;
+    margin: 0 0 20px 0;
+}
+.full-post .entry-meta {
+    color: #555555;
+    font-size: 12px;
+}
+.full-post .entry-meta>li {
+    margin: 0 0 40px 0;
+}
+.full-post .entry-meta li span{
+    display: block;
+}
+.full-post .entry-meta .comments span{
+    font: 24px/28px "League_Gothic";
+}
+.full-post .entry-meta .comments ~ li span {
+    color: #555555;
+    font-weight: bold;
+}
+.post-comments h5 {
+    margin: 20px 0 10px 20px;
+}
+.post-comments .comment-entry-meta {
+    overflow: hidden;
+    margin: 0 0 10px 0;
+
+}
+.post-comments .comment-entry-meta li{
+    float: left;
+    padding: 0 3px 0 0;
+    vertical-align: bottom;
+}
+.post-comments .comment-entry-meta li a {
+    text-decoration: none;
+    font-size: 14px;
+}
+.post-comments .comment-entry-meta li a,
+.post-comments .comment-entry-meta li span{
+    display: block;
+    padding-top: 4px;
+}
+.post-comments .comment-entry-meta li a:hover {
+    text-decoration: underline;
+}
+.post-comments .comment-entry-meta .posted {
+    color: #9c9b9b;
+    font-size: 14px;
+}
+.post-comments .comment-entry-meta .user-name {
+    color: #1f1e1e;
+    font-size: 18px;
+}
+.post-comments .comment-entry-meta li span:after,
+.post-comments .comment-entry-meta li span:before{
+    content: "  | ";
+}
+.post-comments .comment-entry-meta li:last-child:after{
+    content: "";
+}
+.post-comments .level1>li section{
+    padding: 20px 20px 20px 110px;
+    position: relative;
+}
+.post-comments .sublevel>li section {
+    margin: 0 0 0 70px;
+    border-top: 1px solid #DCD5CF;
+}
+.post-comments li img {
+    position: absolute;
+    top:20px;
+    left:30px;
+    border: 5px solid #fff;
+}
+.post-comments .level1>li:nth-of-type(4n+1) {
+    background-color: #f1ede9;
+}
+.post-comments>ul>li:last-child {
+    border-bottom: solid 1px #FAF3ED;
+    padding-bottom: 40px;
+}
+.post-comments>ul{
+    border-bottom: 2px solid #DCD5CF;
+    overflow: hidden;
+}
+/* -------------- /full-post ---------------*/
+/* -----------  sidebar  ------------*/
+#sidebar {
+    margin: 90px 0 0;
+}
+#sidebar ul {
+    overflow: hidden;
+}
+#sidebar label {
+    color: #0a8ca3;
+    font: 12px/12px arial;
+    display: block;
+    padding: 0 0 0 50px;
+    text-align: right;
+    margin: 5px 0;
+}
+#sidebar form {
+    width: 100%;
+
+}
+#sidebar .userEmail {
+    width: 170px;
+    float: left;
+    background-color: #eeeeee;
+    border: 4px solid #44afc2;
+    height: 14px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #4098A7;
+}
+#sidebar .submit {
+    width: 40px;
+    background: url("../images/arrow.png") no-repeat 1px 1px #44afc2;
+    border: none;
+    height: 32px;
+    outline: none;
+    cursor: pointer;
+}
+.top-post-preview {
+    padding: 0 0 0 80px;
+    position: relative;
+    overflow: hidden;
+    min-height: 70px;
+    max-height: 70px;
+    color: #999999;
+    font: 10px/11px Arial;
+}
+.top-post-preview img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border: 4px solid #44afc2;
+}
+.top-post-preview h2 {
+    font: 12px/14px Arial;
+    color: #0a8ca3;
+}
+.top-post-preview p a {
+    color: #999999;
+}
+#tag-cloud {
+    vertical-align: bottom;
+}
+#tag-cloud a {
+    text-decoration: none;
+}
+#tag-cloud a:hover {
+    text-decoration: underline;
+}
+.change-color-blue1, .change-color-blue1:hover {
+    color:#44afc2;
+    font-size: 16px;
+}
+.change-color-blue,
+.change-color-blue:hover {
+    color:#0a8ca3;
+    font-size: 24px;
+}
+.change-color-grey1,
+.change-color-grey1:hover {
+    color: #999999;
+    font-size: 11px;
+    padding-top: 5px;
+}
+.change-size,
+.change-size:hover {
+    font-size: 12px;
+}
+/* ----------- /sidebar  ------------*/
+/* --------------- /Content -------------------*/
+/* ---------------  Footer -------------------*/
+#footer {
+    background: url("../images/bg.png") repeat 0 0;
+    padding: 85px 0;
+    margin: -45px 0;
+    overflow: hidden;
+    color: #333333;
+}
+#footer p {
+    margin: 0 0 5px 0;
+}
+#footer p a {
+    color: #333333;
+}
+#footer .strong {
+    color: #eee;
+    font: bold 11px  Arial;
+}
+#footer .add-border-bottom{
+    border-bottom: 2px solid #44afc2;
+    padding-bottom: 10px;
+    margin: 0 0 10px 0;
+}
+#footer .left-column>li:first-child {
+    padding-bottom: 60px;
+}
+#footer .networks {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+}
+#footer .networks li {
+    float: left;
+}
+#footer .networks a {
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+#footer .twitter {
+    background: url("../images/twitter.gif");
+}
+#footer .rss {
+    background: url("../images/rss.gif");
+}
+#footer .facebook {
+    background: url("../images/facebook.gif");
+}
+#footer img {
+    border: 6px solid #61bdcc;
+}
+#userMessage label {
+    background-color: #5ebcca;
+    color: #057f81;
+    width: 60px;
+    height: 20px;
+    float: left;
+    padding: 6px 0 0 0;
+    text-align: center;
+}
+#userMessage label,
+#userMessage .footer-contact-form{
+    margin: 0 0 20px 0;    
+}
+#userMessage .footer-contact-form {
+    background: none;
+    border: 1px solid #44afc2;;
+    width: 180px;
+    color: #eee;
+    padding: 3px 5px;
+    height: 18px;
+}
+#userMessage textarea {
+    min-height: 80px;
+    max-width: 180px;
+    min-width: 180px;
+    text-align: left;
+}
+#userMessage input[type="submit"] {
+    background: url("../images/arrow.png") no-repeat scroll 4px 0 #82CAD6;
+    border: medium none;
+    float: right;
+    height: 30px;
+    margin: 10px 0 0;
+    width: 40px;
+}
+/* --------------- /Footer -------------------*/
+/* ------------  Post-Footer -----------------*/
+#postfooter .left-column>ul {
+    float: right;
+}
+.right-column li {
+    float: left;
+    padding: 2px 2px 4px 2px;
+}
+.flickr a {
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: url("../images/flickr.jpg") no-repeat 0 0;
+    border: 3px solid #61bdcc;
+}
+#flickr-top-2 {
+    background-position: -61px 0;
+}
+#flickr-top-3 {
+    background-position: -121px 0;
+}
+#flickr-top-4 {
+    background-position: -181px 0;
+}
+#flickr-bottom-1 {
+    background-position: 0 -63px;
+}
+#flickr-bottom-2 {
+    background-position: -61px -63px;
+}
+#flickr-bottom-3 {
+    background-position: -121px -63px;
+}
+#flickr-bottom-4 {
+    background-position: -181px -63px;
+}
+/* ------------ /Post-Footer -----------------*/
+

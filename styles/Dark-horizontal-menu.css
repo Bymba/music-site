@@ -1,0 +1,85 @@
+.dark-menu {
+    height: 180px;
+    padding: 5% 0 0 10%;
+    background: url("../images/dark-menu-bg.png") no-repeat 90% 90% #37302e;
+    position: relative;
+}
+
+.menu a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.horizont li{
+    float:left;
+    padding: 1% 5%;
+    background: #fff;
+    margin: 0 2%;
+    border-radius: 3px;
+    position: relative;
+}
+.horizont li ul {
+    display: none;
+    position: relative;
+}
+.horizont li:hover .submenu-level1 {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left:-3%;
+    padding-top: 10px;
+}
+.horizont li ul {
+    width: 100%;
+}
+.horizont .submenu li{
+    position: relative;
+}
+.horizont .submenu-level1 .submenu:hover .submenu-level2, .horizont .submenu-level2 .submenu:hover .submenu-level3 {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top:0px;
+    left:100%;
+    padding-left: 10px;
+    width: 90%;
+}
+.horizont li:hover li {
+    padding: 5% 10%;
+    width:100%;
+}
+.horizont li:hover .submenu {
+    background: url("../images/dark-menu-arrow.png") no-repeat right 55% #282321;
+}
+.dark-menu li:hover li:hover {
+    background: #87756F;
+}
+.dark-menu li:hover li:hover>a {
+    color: #282321;
+}
+.dark-menu li {
+    background: #282321;
+    border-top: 1px solid #6b5d59;
+    border-bottom: 1px solid #1b1716;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.dark-menu li:hover {
+    box-shadow:none;
+}
+.dark-menu .active, .dark-menu .active:hover {
+    background: #282321;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5) inset;
+    border-bottom: 1px solid #6b5d59;
+    border-top:none;
+}
+.dark-menu li a {
+    color: #87756f;
+}
+.dark-menu .active, .dark-menu ul li:hover a {
+    color: #87756F;
+}
+.dark-menu li:hover {
+    border-top: 1px solid #282321;
+}

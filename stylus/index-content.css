@@ -101,8 +101,16 @@
   border-bottom: 1px dashed #dadada;
   margin-top: 1.2rem;
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 1px;
+}
+@media screen and (max-width: 620px) {
+  .block .titleborder {
+    display: none;
+  }
+}
+.block.portfolio {
+  padding: 0 1rem;
 }
 .block h2 {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYdJREFUeNpkk9uKwkAQROf/P1EQZBWiKGIukhhW3ZMcKWZ352Ho9K2qazrl/X53XTcMw/V6xcbgnqaJ+3s9j8cj/rZtue/3OyX4i14+uK1/Pp8Yp9MJe57nROf13G63eEpq+KalmIfDIRk4Kai747FXwRrWE7Z935sHMT1wSQ2DGPqFbGwcx8vlYkyG5/PZvkC9Xq9kLjOboTZ2yeRm7HY757ejXGAKwYU2ZdaLbMxRU5O5GD5aFidUVezMY4Y60QXy1tcTFStJdTY5b7db/ZD/34surkYx5i0+Ni2cQm3EpBGfyIl9PB4/yHl3xKwntJ5ZKFAL1TIHZ1EA81Q42jBItEgUTMrc0/LnDcjOnvmqYuL8Wk+d+XlnLFxiimMGUVpbn82zI5SXYr/FV892PSJHLf20yFwfZFWVsDGPWuAkTb9vZt+iBk3T1MjZXlcqr5i/Gv+y29nh/AMQi2bW+KqITIIz6i/hJk69z2bAE0P8etsWtd21OjtcODXn/X4v881mI/8fAQYAfHmLg6Uw82kAAAAASUVORK5CYII=") repeat #fafafa;
@@ -115,6 +123,12 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   padding-right: 0.5rem;
+}
+@media screen and (max-width: 620px) {
+  .block h2 {
+    display: block;
+    text-align: center;
+  }
 }
 .recent-portfolio {
   overflow: hidden;
@@ -167,35 +181,34 @@
 .recent-portfolio h3 a:hover {
   color: #c33;
 }
-@media screen and (max-width: 620px) {
-  .borderLine {
-    margin: 1rem auto;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    height: 0.375rem;
-  }
-  .borderLine .borderLineLeft {
-    height: 0.375rem;
-    background: #c33;
-    width: 2rem;
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    left: 0;
-    float: left;
-  }
-  .borderLine .borderLineRight {
-    z-index: 10;
-    position: absolute;
-    top: 0.1rem;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #dadada;
-  }
-  .descriptionHomePortText {
-    font-size: 0.8125rem;
-    line-height: 1.2rem;
-  }
+.recent-portfolio .borderLine {
+  margin: 1rem auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  height: 0.375rem;
+}
+.recent-portfolio .borderLine .borderLineLeft {
+  height: 0.375rem;
+  background: #c33;
+  width: 2rem;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+}
+.recent-portfolio .borderLine .borderLineRight {
+  z-index: 10;
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #dadada;
+}
+.recent-portfolio .descriptionHomePortText {
+  font-size: 0.8125rem;
+  line-height: 1.2rem;
+  padding-bottom: 0.625rem;
 }

@@ -1,0 +1,394 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea {
+    padding: 0;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+ul {
+    list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- General settings ---------*/
+html {
+    overflow-y: scroll;
+}
+body {
+    background: #fff;
+    color: #AAAAAA;
+    text-align: left;
+    font: 12px/16px Helvetica, Arial, "Helvetica CY", sans-serif, "Nimbus Sans L";
+}
+.main-wraper{
+    margin: 0 auto 80px;
+    width: 960px;
+}
+
+label, input[type="button"], button[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    color: #444444;
+    text-decoration: none;
+    outline: none;
+
+}
+a:hover {
+    color: #C95039;
+    text-decoration: none;
+    outline: none;
+}
+a:focus, a:active {
+    color: #C95039;
+    text-decoration: none;
+}
+
+/* --------  fonts ---------*/
+@font-face {
+    font-family: League_Gothic;
+    src: url(../fonts/League_Gothic-webfont.eot);
+    src: url(../fonts/League_Gothic-webfont.svg);
+    src: url(../fonts/League_Gothic-webfont.ttf);
+    src: url(../fonts/League_Gothic-webfont.woff);
+}
+h1 {
+}
+h2 {
+    background: #C95039;
+    color: #ffffff;
+    text-align: center;
+    font: 24px Helvetica, sans-serif;
+    padding: 5px 0;
+    margin: 0px 0 10px;
+}
+h3 {
+    color: #444444;
+    font-size: 18px;
+    padding: 10px 0;
+}
+h4 {
+    color: #444444;
+    font: 24px sans-serif, Arial;
+    border-bottom: dotted 1px #444444;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+}
+strong {
+    color: #444444;
+    font: 16px/20px Helvetica, sans-serif;
+    display: block;
+}
+input, select, button, textarea {
+    font-family: Helvetica, Arial, "Helvetica CY", sans-serif, "Nimbus Sans L";
+}
+/* -------- /fonts ---------*/
+/* --------------- /General settings ---------*/
+
+/* ---------------- HEADER -------------------*/
+header {
+    /*margin: 0 0 40px 0;*/
+
+}
+header>section{
+    border-bottom: 1px solid #EEEEEE;
+    overflow: hidden;
+}
+#general-content, #contact_info{
+    padding: 20px 0;
+}
+#logo a{
+    display: block;
+    float: left;
+    font: bold 60px/60px sans-serif, Helvetica, Arial;
+    margin: 20px 0;
+    padding: 0 0 0 60px;
+    position: relative;
+}
+#logo span {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #C95039;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+}
+/* ----------  Navigation -------------*/
+nav {
+    float: left;
+    width: 40%;
+    margin: 25px 0;
+}
+#navMenu>li {
+    padding: 5px 0 5px 20px;
+}
+#navMenu li li {
+    padding: 2px 0 2px 15px;
+}
+#navMenu .submenu ul{
+    display: none;
+    margin: 2px 0 2px  25px;
+}
+#navMenu {
+    width: 180px;
+}
+#navMenu .submenu:hover ul{
+    display: block;
+}
+#navMenu .submenu li{
+border-left: dotted 1px #555555;
+}
+#navMenu .submenu li:hover{
+    border-left: dotted 1px #C95039;
+}
+#navMenu .site-examples a {
+    display: block;
+    width: 100px;
+    position: relative;
+}
+#navMenu .site-examples a>img {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 100%;
+    margin: -40px 0 0;
+    padding: 0 0 0 45px;
+}
+#navMenu .site-examples a:hover img {
+    display: block;
+}
+/* ---------- /Navigation -------------*/
+/* ----------  Summary ----------------*/
+#summary {
+    float: left;
+    width: 60%;
+}
+#summary>li {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 3%;
+}
+#summary .lage-text {
+    font: bold 60px/60px 'League_Gothic';
+    color: #444444;
+    display: block;
+}
+#summary p{
+    padding: 10px 0 0 0;
+}
+#summary a{
+    color: #C95039;
+}
+#summary a:visited{
+    color: #444444;
+}
+#summary a:hover{
+    text-decoration: underline;
+}
+/* ---------- /Summary ----------------*/
+/* --------------- /HEADER -------------------*/
+/* --------- /PORTFOLIO_CONTENT --------------*/
+/* ---------  Contact_info ------------*/
+#portfolio-content>section,
+#portfolio-examples>section{
+    border-bottom: 1px solid #EEEEEE;
+    overflow: hidden;
+    padding: 20px 0;
+}
+#portfolio-content .first-section {
+    padding-top: 0px;
+    margin: -5px 0 0 0;
+}
+#contact_info figure {
+    position: relative;
+    float: left;
+}
+#contact_info figure img{
+    border-bottom: 1px solid #ffffff;
+}
+#contact_info figure:before {
+    bottom: 17px;
+    box-shadow: 0 15px 7px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 15px 7px rgba(0, 0, 0, 0.7); /* for Firefox 3.5+*/
+    -moz-box-shadow: 0 15px 7px rgba(0, 0, 0, 0.7);  /*for Safari and Chrome*/
+    content: "";
+    height: 20%;
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    left: 10px;
+    right: auto;
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+}
+#contact_info figcaption {
+    position: absolute;
+    top:0px;
+    left:0px;
+    display: block;
+    background: #C95039;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+#contact_info .contacts {
+    padding: 0 80px 0 650px;
+    font-size: 16px;
+}
+#contact_info .contacts li {
+    padding: 10px 0;
+}
+.linkedin a{
+    color: #C95039;
+    text-decoration: none;
+}
+.linkedin a:visited{
+    color: #444444;
+}
+.linkedin a:hover{
+    text-decoration: underline;
+    color: #444444;
+}
+/* --------- /Contact_info ------------*/
+/* ------  Portfolio-examples ---------*/
+#portfolio-examples>ul {
+    margin: 30px 0 0 0;
+}
+#portfolio-examples>ul>li{
+    float: left;
+    padding: 0 15px 20px 15px;
+    width: 30%;
+}
+#portfolio-examples figure a{
+    position: relative;
+    display: block;
+}
+#portfolio-examples figure img{
+    border: 1px solid #F7F7F7;
+}
+#portfolio-examples figure>a:before {
+    bottom: 19px;
+    box-shadow: 0 15px 7px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 15px 7px rgba(0, 0, 0, 0.7); /* for Firefox 3.5+ */
+    -moz-box-shadow: 0 15px 7px rgba(0, 0, 0, 0.7); /* for Safari and Chrome */
+    content: "";
+    height: 20%;
+    left: 10px;
+    position: absolute;
+    right: auto;
+    transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    width: 70%;
+    z-index: -1;
+}
+#portfolio-examples figcaption {
+    color: #444444;
+    font: 16px sans-serif,Arial;
+    padding: 5px 0;
+    margin: 5px 0 10px;
+}
+/* ------ /Portfolio-examples ---------*/
+/* --------- Work experience ----------*/
+#work-experience>section{
+    float: left;
+    padding: 0 15px 0px 15px;
+    width: 30%;
+    outline: hidden;
+}
+#work-experience .h3_description {
+    color: #444444;
+    font-style: italic;
+}
+#work-experience p {
+    padding: 0 0 5px 0;
+    color: #444444;
+}
+#work-experience section li {
+    padding: 0 0 5px 10px;
+}
+#work-experience .h3_description a {
+    color: #C95039;
+    text-decoration: none;
+}
+#work-experience .h3_description a:visited{
+    color: #444444;
+}
+#work-experience .h3_description a:hover{
+    text-decoration: underline;
+    color: #444444;
+}
+/* --------- /Work experience ---------*/
+#education {
+    text-align: center;
+}
+/* --------- page - buttons -----------*/
+#border-radius-buttons li {
+    float: left;
+    padding: 2%;
+    width: 21%;
+}
+#expandable-buttons, #keyboard {
+    overflow: hidden;
+}
+#expandable-buttons ul{
+    float: left;
+    width: 50%;
+    margin: 55px 0 0 0;
+}
+#expandable-buttons ul li {
+    margin: 0 0 9px 0;
+}
+#expandable-buttons .description {
+    float: left;
+    width: 25%;
+    text-align: right;
+    padding: 0 5% 0 20%;
+}
+/* --------- /page - buttons -----------*/
+/* --------- /Work experience ---------*/
+
+/* --------- /PORTFOLIO_CONTENT --------------*/

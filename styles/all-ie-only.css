@@ -1,0 +1,49 @@
+/*---- fix for homepage ----*/
+#portfolio-examples figure>a:before,
+#contact_info figure:before,
+.hideIE{
+    display: none;
+}
+.shadow-in-ie {
+    display: inline-block;
+    height: 15px;
+    width: 300px;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    background: url("../images/shadow.jpg") no-repeat;
+}
+#portfolio-examples .shadow {
+    top: 98%;
+}
+/*---- /fix for homepage ----*/
+/*---- fix for switcher ----*/
+#itemsList ul{
+    background: url("../images/fixIE.png") repeat;
+}
+/*---- /fix for switcher ----*/
+/*----  fix for tab-menu ----*/
+#tabmenu .submenu li ul{
+    position: absolute;
+    top:39px;
+    left:0px;
+    border-bottom: solid 1px #111;
+    border-left: solid 1px #111;
+    border-right: solid 1px #111;
+    width: 100%;
+}
+#tabmenu .submenu li ul li {
+    background: #416FA7;
+}
+#tabmenu > ul:before {
+    top:54px;
+}
+#tabmenu *, #tabmenu *:before{
+    border: 0 !important;
+}
+/*---- /fix for tab-menu ----*/
+/*--------------  Citrus menu------------*/
+#citrus-menu nav a:hover, #citrus-menu nav div{
+    background: url("../images/fixIE.png");
+}
+/*-------------- /Citrus menu------------*/

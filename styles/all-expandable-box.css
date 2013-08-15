@@ -1,0 +1,71 @@
+#all_expandable_box .item-wrapper{
+    width: 600px;
+    min-width: 10%;
+    max-width: 100%;
+    margin: 5% auto;
+}
+#all_expandable_box p {
+    font: 16px/30px Arial;
+}
+#note-content {
+    padding: 3px 5px 0 0;
+}
+#note-content .description {
+    color: #444444;
+}
+#note-content a {
+    display: block;
+    padding: 5px 0 0;
+    color: #C95039;
+    text-decoration: underline;
+}
+#note-content a:hover {
+    text-decoration: none;
+}
+#all_expandable_box h4 {
+    border-bottom: none;
+    color: #999999;
+    margin: 0;
+    font: 24px/35px sans-serif,Arial;
+}
+.top_left, .middle_left, .bottom_left {
+    padding: 0 0 0 32px;
+}
+.top_left {
+    background: url("../images/Expandable-box-sptie1.png") no-repeat left top;
+}
+.middle_left {
+    background: url("../images/Expandable-box-sptie2.png") repeat-y left top;
+}
+.bottom_left {
+    background: url("../images/Expandable-box-sptie1.png") no-repeat left -47px;
+}
+.top_right,  .middle_right, .bottom_right {
+    padding: 0 32px 0 0;
+}
+.top_right {
+    background: url("../images/Expandable-box-sptie1.png") no-repeat right -23px;
+}
+.middle_right {
+    background: url("../images/Expandable-box-sptie2.png") repeat-y right top;
+}
+.bottom_right {
+    background: url("../images/Expandable-box-sptie1.png") no-repeat right -92px;
+}
+
+.top_center {
+     height: 18px;
+ }
+.bottom_center {
+    height: 41px;
+}
+.top_center {
+    background: url("../images/Expandable-box-sptie1.png") repeat-x left -160px;
+}
+.bottom_center {
+    background: url("../images/Expandable-box-sptie1.png") repeat-x left -160px;
+}
+.middle_center {
+    background: url("../images/Expandable-box-body.png") repeat 0 0;
+    overflow: hidden;
+}

@@ -1,0 +1,102 @@
+.sub-page .block > section,
+.sub-page .block .item {
+  padding: 1rem 0 2.5rem;
+}
+.sub-page figure img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 620px) {
+  .sub-page p,
+  .sub-page a,
+  .sub-page li {
+    font-size: 0.785rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .page-navigation .tabmenu-section,
+  .page-navigation .dark-menu-section {
+    display: none;
+  }
+  .page-navigation #citrus-menu h4,
+  .page-navigation #citrus-menu h3 {
+    font-size: 1rem;
+  }
+  .page-navigation #citrus-menu p {
+    font-size: 0.675rem;
+  }
+  .page-navigation #citrus-menu .horizontal-wrapper > section {
+    height: 150px;
+    overflow: hidden;
+    float: right;
+    width: 45%;
+  }
+  .page-navigation #citrus-menu .horizontal-wrapper > nav {
+    width: 50%;
+    font-size: 0.6rem;
+  }
+  .page-navigation #citrus-menu nav .submenu .submenu > a,
+  .page-navigation #citrus-menu nav .submenu .submenu:hover > a {
+    background-image: none;
+  }
+  .page-navigation #citrus-menu nav .submenu .submenu ul,
+  .page-navigation #citrus-menu nav .submenu .submenu:hover > a:before {
+    display: none;
+  }
+  .page-navigation #accordion-menu {
+    background: none;
+  }
+  .page-navigation #accordion-menu article {
+    display: none;
+  }
+  .page-navigation #accordion-menu nav {
+    float: none;
+    margin: 0 auto;
+  }
+}
+.portfolio-examples > ul > li {
+  float: left;
+  padding: 0 1% 20px;
+  width: 30%;
+}
+@media screen and (max-width: 620px) {
+  .page-templates .portfolio-examples > ul > li {
+    width: 48%;
+  }
+  .page-templates .portfolio-examples .gallery.tape {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .page-templates .portfolio-examples .gallery.tape>li {
+    width: 100%;
+  }
+}
+.portfolio-examples figure > a:before {
+  bottom: 19px;
+  box-shadow: 0 15px 7px rgba(0,0,0,0.7);
+  content: "";
+  height: 20%;
+  left: 10px;
+  position: absolute;
+  right: auto;
+  transform: rotate(-4deg);
+  width: 70%;
+  z-index: -1;
+}
+.portfolio-examples figure a {
+  display: block;
+  position: relative;
+}
+.portfolio-examples figcaption {
+  color: #444;
+  font: 16px sans-serif, Arial;
+  margin: 5px 0 10px;
+  padding: 5px 0;
+}
+#footer-bottom .titleborder {
+  padding: 0;
+  width: 95%;
+}
+.portfolio-examples > ul {
+  overflow: hidden;
+}
