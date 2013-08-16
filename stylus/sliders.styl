@@ -240,7 +240,8 @@
 
 
 .experience
-	.iosSlider 
+	margin-bottom 4rem
+	.iosSliderSmal 
 		position: relative;
 		top: 0;
 		left: 0;
@@ -250,7 +251,39 @@
 		.slider
 			width: 100%;
 			height: 100%;
+			position: relative
+			margin-left 1.4375rem
 			.slide 
 				float: left;
-				width: 160px;
-				height: 130px;
+				width: 10rem;
+				margin-right: 1.3125rem
+				height: 8.125rem;
+		.navigation
+			position: absolute
+			top 12%
+			display block
+			width 1.4rem
+			height 88%
+			background color-red
+			opacity: 0
+			z-index 1000
+			line-height 6.95rem
+			text-align center
+			color white		
+			transition 0.8s	
+		.navigation.prevSm
+			left -40px			
+		.navigation.nextSm
+			right -40px
+.iosSliderSmal:hover
+	.navigation
+		opacity: 0.9
+	.navigation.prevSm
+		left 0			
+	.navigation.nextSm
+		right 0
+
+
+@media screen and (max-width: 1000px)
+	.experience .iosSliderSmal .slider
+		margin-left -5.5rem
